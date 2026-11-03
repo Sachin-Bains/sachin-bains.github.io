@@ -1,0 +1,2887 @@
+[
+  {
+    "path": "src/dataio/channel_dataset.py",
+    "lines": 213,
+    "sha256": "897f924165448a442e1d54494cfda54045384615491d6a7da89f3bb6a6b1ca5f",
+    "symbols": [
+      {
+        "name": "ChannelDataset",
+        "line": 10,
+        "end": 213,
+        "doc": "Dataset for channel flow velocity cubes - compatible with HITDataset interface."
+      },
+      {
+        "name": "__init__",
+        "line": 13,
+        "end": 104,
+        "doc": "Initialize Channel Dataset."
+      },
+      {
+        "name": "_compute_stats",
+        "line": 106,
+        "end": 180,
+        "doc": "Compute normalization statistics following thesis methodology."
+      },
+      {
+        "name": "__len__",
+        "line": 182,
+        "end": 183,
+        "doc": ""
+      },
+      {
+        "name": "__getitem__",
+        "line": 185,
+        "end": 213,
+        "doc": "Load a velocity cube - returns (x, y) tuple like HITDataset."
+      }
+    ]
+  },
+  {
+    "path": "src/dataio/jhtdb_api.py",
+    "lines": 390,
+    "sha256": "6faec3fb7c31ee539694ebd06520e16c75de8e4a15f961e40856f70520d3a680",
+    "symbols": [
+      {
+        "name": "JHTDBClient",
+        "line": 14,
+        "end": 390,
+        "doc": "Client for accessing JHTDB data via HTTP API with authentication."
+      },
+      {
+        "name": "__init__",
+        "line": 17,
+        "end": 65,
+        "doc": "Initialize JHTDB client using HTTP API."
+      },
+      {
+        "name": "_rate_limit_request",
+        "line": 67,
+        "end": 73,
+        "doc": "Apply rate limiting to requests."
+      },
+      {
+        "name": "get_velocity_cube",
+        "line": 75,
+        "end": 166,
+        "doc": "Get velocity cube from JHTDB using HTTP API."
+      },
+      {
+        "name": "_generate_fallback_cube",
+        "line": 168,
+        "end": 194,
+        "doc": "Generate synthetic velocity cube as fallback."
+      },
+      {
+        "name": "download_dataset_batch",
+        "line": 196,
+        "end": 266,
+        "doc": "Download a batch of velocity cubes."
+      },
+      {
+        "name": "create_smoke_test_config",
+        "line": 268,
+        "end": 317,
+        "doc": "Create configuration for smoke test data collection."
+      },
+      {
+        "name": "create_full_scale_config",
+        "line": 319,
+        "end": 390,
+        "doc": "Create configuration for full-scale data collection."
+      },
+      {
+        "name": "download_cube",
+        "line": 223,
+        "end": 253,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/dataio/jhtdb_dataset.py",
+    "lines": 341,
+    "sha256": "13a18ee1b36bd55242bb2f2ada58d8b7c698be5d1cf422330b0d405db7ab8568",
+    "symbols": [
+      {
+        "name": "JHTDBChannelDataset",
+        "line": 11,
+        "end": 341,
+        "doc": "JHTDB Channel Flow Dataset for 3D turbulence surrogate modeling."
+      },
+      {
+        "name": "__init__",
+        "line": 14,
+        "end": 67,
+        "doc": "Initialize JHTDB Channel Flow Dataset."
+      },
+      {
+        "name": "_load_metadata",
+        "line": 69,
+        "end": 102,
+        "doc": "Load dataset metadata and grid information."
+      },
+      {
+        "name": "_create_sample_indices",
+        "line": 104,
+        "end": 172,
+        "doc": "Create indices for samples based on y+ bands and temporal/spatial sampling."
+      },
+      {
+        "name": "_compute_normalization_stats",
+        "line": 174,
+        "end": 213,
+        "doc": "Compute normalization statistics from a subset of data."
+      },
+      {
+        "name": "_load_velocity_cube",
+        "line": 215,
+        "end": 245,
+        "doc": "Load a velocity cube from JHTDB data."
+      },
+      {
+        "name": "_generate_synthetic_cube",
+        "line": 247,
+        "end": 281,
+        "doc": "Generate synthetic velocity cube for testing."
+      },
+      {
+        "name": "__len__",
+        "line": 283,
+        "end": 285,
+        "doc": "Return number of samples in dataset."
+      },
+      {
+        "name": "__getitem__",
+        "line": 287,
+        "end": 309,
+        "doc": "Get a sample from the dataset."
+      },
+      {
+        "name": "get_physics_properties",
+        "line": 311,
+        "end": 322,
+        "doc": "Get physics properties for a sample."
+      },
+      {
+        "name": "get_dataset_stats",
+        "line": 324,
+        "end": 341,
+        "doc": "Get dataset statistics."
+      }
+    ]
+  },
+  {
+    "path": "src/dataio/splits.py",
+    "lines": 150,
+    "sha256": "1f4385c7b6eb69312b36b9ab4dd94a7ce1ad083bccdc6f36ea994b6d0429e74d",
+    "symbols": [
+      {
+        "name": "tile_indices",
+        "line": 4,
+        "end": 6,
+        "doc": ""
+      },
+      {
+        "name": "make_id_splits",
+        "line": 8,
+        "end": 26,
+        "doc": "Create non-overlapping train/val/test splits for in-domain evaluation."
+      },
+      {
+        "name": "make_ab_splits",
+        "line": 28,
+        "end": 71,
+        "doc": "Create A\u2192B splits where Region B is last 25% in x-direction."
+      },
+      {
+        "name": "make_splits_from_h5",
+        "line": 72,
+        "end": 150,
+        "doc": "Create splits from HDF5 data."
+      }
+    ]
+  },
+  {
+    "path": "src/eval/adversarial_robustness.py",
+    "lines": 445,
+    "sha256": "3460352c0ca8cd6b39524c4bf5fa52d5a46e91cf4f0d0f6fc0c566f2528a3628",
+    "symbols": [
+      {
+        "name": "AdversarialAttacker",
+        "line": 9,
+        "end": 132,
+        "doc": "Adversarial attacks for turbulence models."
+      },
+      {
+        "name": "RobustnessEvaluator",
+        "line": 134,
+        "end": 445,
+        "doc": "Evaluate model robustness against adversarial attacks."
+      },
+      {
+        "name": "__init__",
+        "line": 12,
+        "end": 23,
+        "doc": "Initialize adversarial attacker."
+      },
+      {
+        "name": "fgsm_attack",
+        "line": 25,
+        "end": 43,
+        "doc": "Fast Gradient Sign Method attack."
+      },
+      {
+        "name": "pgd_attack",
+        "line": 45,
+        "end": 74,
+        "doc": "Projected Gradient Descent attack."
+      },
+      {
+        "name": "physics_aware_attack",
+        "line": 76,
+        "end": 114,
+        "doc": "Physics-aware adversarial attack for turbulence data."
+      },
+      {
+        "name": "gaussian_noise_attack",
+        "line": 116,
+        "end": 120,
+        "doc": "Gaussian noise attack."
+      },
+      {
+        "name": "spatial_attack",
+        "line": 122,
+        "end": 132,
+        "doc": "Spatial transformation attack."
+      },
+      {
+        "name": "__init__",
+        "line": 137,
+        "end": 147,
+        "doc": "Initialize robustness evaluator."
+      },
+      {
+        "name": "evaluate_attack_robustness",
+        "line": 149,
+        "end": 166,
+        "doc": "Evaluate robustness against multiple attacks."
+      },
+      {
+        "name": "_evaluate_single_attack",
+        "line": 168,
+        "end": 229,
+        "doc": "Evaluate robustness against a single attack."
+      },
+      {
+        "name": "evaluate_uncertainty_robustness",
+        "line": 231,
+        "end": 265,
+        "doc": "Evaluate robustness of uncertainty estimates."
+      },
+      {
+        "name": "comprehensive_robustness_analysis",
+        "line": 267,
+        "end": 311,
+        "doc": "Run comprehensive robustness analysis."
+      },
+      {
+        "name": "_compute_overall_robustness",
+        "line": 313,
+        "end": 333,
+        "doc": "Compute overall robustness metrics."
+      },
+      {
+        "name": "plot_robustness_analysis",
+        "line": 335,
+        "end": 395,
+        "doc": "Plot robustness analysis results."
+      },
+      {
+        "name": "generate_robustness_report",
+        "line": 397,
+        "end": 445,
+        "doc": "Generate robustness analysis report."
+      }
+    ]
+  },
+  {
+    "path": "src/eval/band_evaluation.py",
+    "lines": 398,
+    "sha256": "a13053debf22a8b0ccd8b3fbc4ec262d62f9338e24868eb741c253af5e3c906f",
+    "symbols": [
+      {
+        "name": "BandEvaluator",
+        "line": 16,
+        "end": 333,
+        "doc": "Evaluates model performance separately for each Y+ band."
+      },
+      {
+        "name": "evaluate_model_by_bands",
+        "line": 336,
+        "end": 378,
+        "doc": "Convenience function to evaluate a model's outputs by Y+ bands."
+      },
+      {
+        "name": "__init__",
+        "line": 19,
+        "end": 38,
+        "doc": "Initialize band evaluator."
+      },
+      {
+        "name": "load_splits_metadata",
+        "line": 40,
+        "end": 52,
+        "doc": "Load splits metadata and band assignments."
+      },
+      {
+        "name": "extract_band_from_filename",
+        "line": 54,
+        "end": 74,
+        "doc": "Extract band index from filename pattern."
+      },
+      {
+        "name": "compute_band_metrics",
+        "line": 76,
+        "end": 155,
+        "doc": "Compute metrics separately for each Y+ band."
+      },
+      {
+        "name": "_compute_metrics",
+        "line": 157,
+        "end": 218,
+        "doc": "Compute standard regression and UQ metrics."
+      },
+      {
+        "name": "_compute_calibration_error",
+        "line": 220,
+        "end": 253,
+        "doc": "Compute Expected Calibration Error (ECE)."
+      },
+      {
+        "name": "_is_band_admissible",
+        "line": 255,
+        "end": 274,
+        "doc": "Determine if a band's performance is admissible."
+      },
+      {
+        "name": "save_results",
+        "line": 276,
+        "end": 284,
+        "doc": "Save evaluation results to JSON."
+      },
+      {
+        "name": "generate_report",
+        "line": 286,
+        "end": 333,
+        "doc": "Generate a human-readable evaluation report."
+      }
+    ]
+  },
+  {
+    "path": "src/eval/conformal.py",
+    "lines": 11,
+    "sha256": "2bd637bce05c4a1f8ff1ce3bd69ac67afa4d405a3aceb357a609a33234df2f08",
+    "symbols": [
+      {
+        "name": "conformal_wrap",
+        "line": 3,
+        "end": 11,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/eval/cross_validation.py",
+    "lines": 407,
+    "sha256": "3dc249c137d280ccbd66d91424211c6125fc16582926b359a66884e5d27dc13d",
+    "symbols": [
+      {
+        "name": "TurbulenceCrossValidator",
+        "line": 14,
+        "end": 366,
+        "doc": "Cross-validation framework for turbulence surrogate models."
+      },
+      {
+        "name": "turbulence_metrics",
+        "line": 368,
+        "end": 407,
+        "doc": "Compute turbulence-specific metrics for cross-validation."
+      },
+      {
+        "name": "__init__",
+        "line": 17,
+        "end": 30,
+        "doc": "Initialize cross-validator."
+      },
+      {
+        "name": "create_turbulence_stratification",
+        "line": 32,
+        "end": 51,
+        "doc": "Create stratification labels based on turbulence intensity."
+      },
+      {
+        "name": "get_cv_splits",
+        "line": 53,
+        "end": 68,
+        "doc": "Generate cross-validation splits."
+      },
+      {
+        "name": "evaluate_fold",
+        "line": 70,
+        "end": 139,
+        "doc": "Evaluate a single fold."
+      },
+      {
+        "name": "run_cross_validation",
+        "line": 141,
+        "end": 181,
+        "doc": "Run complete cross-validation."
+      },
+      {
+        "name": "aggregate_results",
+        "line": 183,
+        "end": 213,
+        "doc": "Aggregate results across folds."
+      },
+      {
+        "name": "plot_cv_results",
+        "line": 215,
+        "end": 279,
+        "doc": "Plot cross-validation results."
+      },
+      {
+        "name": "save_results",
+        "line": 281,
+        "end": 296,
+        "doc": "Save cross-validation results."
+      },
+      {
+        "name": "compare_models",
+        "line": 298,
+        "end": 324,
+        "doc": "Compare multiple models using cross-validation."
+      },
+      {
+        "name": "plot_model_comparison",
+        "line": 326,
+        "end": 366,
+        "doc": "Plot comparison between models."
+      }
+    ]
+  },
+  {
+    "path": "src/eval/distribution_shift.py",
+    "lines": 441,
+    "sha256": "c125bf7724454845c3f093472b52fa7d0d4dae030537e3af7d5e4d116427d4c4",
+    "symbols": [
+      {
+        "name": "DistributionShiftDetector",
+        "line": 12,
+        "end": 326,
+        "doc": "Detect distribution shifts in turbulence data."
+      },
+      {
+        "name": "DomainAdaptationAnalyzer",
+        "line": 328,
+        "end": 441,
+        "doc": "Analyze domain adaptation for turbulence models."
+      },
+      {
+        "name": "__init__",
+        "line": 15,
+        "end": 30,
+        "doc": "Initialize shift detector with reference data."
+      },
+      {
+        "name": "_compute_statistics",
+        "line": 32,
+        "end": 45,
+        "doc": "Compute statistical properties of data."
+      },
+      {
+        "name": "_compute_skewness",
+        "line": 47,
+        "end": 53,
+        "doc": "Compute skewness of data."
+      },
+      {
+        "name": "_compute_kurtosis",
+        "line": 55,
+        "end": 61,
+        "doc": "Compute kurtosis of data."
+      },
+      {
+        "name": "_compute_gradient_norm",
+        "line": 63,
+        "end": 81,
+        "doc": "Compute spatial gradient norm."
+      },
+      {
+        "name": "detect_shift_statistical",
+        "line": 83,
+        "end": 135,
+        "doc": "Detect distribution shift using statistical tests."
+      },
+      {
+        "name": "detect_shift_mmd",
+        "line": 137,
+        "end": 160,
+        "doc": "Detect distribution shift using Maximum Mean Discrepancy."
+      },
+      {
+        "name": "_compute_mmd",
+        "line": 162,
+        "end": 185,
+        "doc": "Compute Maximum Mean Discrepancy with RBF kernel."
+      },
+      {
+        "name": "detect_shift_classifier",
+        "line": 187,
+        "end": 217,
+        "doc": "Detect distribution shift using binary classifier approach."
+      },
+      {
+        "name": "comprehensive_shift_analysis",
+        "line": 219,
+        "end": 251,
+        "doc": "Run comprehensive distribution shift analysis."
+      },
+      {
+        "name": "plot_shift_analysis",
+        "line": 253,
+        "end": 326,
+        "doc": "Plot distribution shift analysis results."
+      },
+      {
+        "name": "__init__",
+        "line": 331,
+        "end": 342,
+        "doc": "Initialize domain adaptation analyzer."
+      },
+      {
+        "name": "analyze_domain_gap",
+        "line": 344,
+        "end": 360,
+        "doc": "Analyze domain gap between source and target data."
+      },
+      {
+        "name": "_extract_features",
+        "line": 362,
+        "end": 382,
+        "doc": "Extract intermediate features from model."
+      },
+      {
+        "name": "_compute_feature_shift",
+        "line": 384,
+        "end": 396,
+        "doc": "Compute feature distribution shift."
+      },
+      {
+        "name": "_compute_prediction_shift",
+        "line": 398,
+        "end": 408,
+        "doc": "Compute prediction distribution shift."
+      },
+      {
+        "name": "suggest_adaptation_strategy",
+        "line": 410,
+        "end": 441,
+        "doc": "Suggest domain adaptation strategy based on domain gap."
+      },
+      {
+        "name": "rbf_kernel",
+        "line": 166,
+        "end": 171,
+        "doc": "RBF kernel computation."
+      },
+      {
+        "name": "hook_fn",
+        "line": 366,
+        "end": 367,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/eval/ensemble_diversity.py",
+    "lines": 488,
+    "sha256": "93111112c4f8629f3584c48288fe7beb47f76afd8e60a57339019865c5c55289",
+    "symbols": [
+      {
+        "name": "EnsembleDiversityMetrics",
+        "line": 12,
+        "end": 488,
+        "doc": "Comprehensive ensemble diversity metrics for model evaluation."
+      },
+      {
+        "name": "__init__",
+        "line": 15,
+        "end": 17,
+        "doc": "Initialize ensemble diversity analyzer."
+      },
+      {
+        "name": "compute_pairwise_disagreement",
+        "line": 19,
+        "end": 47,
+        "doc": "Compute pairwise disagreement between ensemble members."
+      },
+      {
+        "name": "compute_diversity_measures",
+        "line": 49,
+        "end": 110,
+        "doc": "Compute various diversity measures for ensemble."
+      },
+      {
+        "name": "compute_bias_variance_decomposition",
+        "line": 112,
+        "end": 150,
+        "doc": "Compute bias-variance decomposition for ensemble."
+      },
+      {
+        "name": "compute_ensemble_strength",
+        "line": 152,
+        "end": 198,
+        "doc": "Compute ensemble strength metrics."
+      },
+      {
+        "name": "compute_prediction_intervals",
+        "line": 200,
+        "end": 218,
+        "doc": "Compute prediction intervals from ensemble."
+      },
+      {
+        "name": "analyze_ensemble_convergence",
+        "line": 220,
+        "end": 250,
+        "doc": "Analyze how ensemble performance changes with number of models."
+      },
+      {
+        "name": "comprehensive_ensemble_analysis",
+        "line": 252,
+        "end": 294,
+        "doc": "Run comprehensive ensemble diversity analysis."
+      },
+      {
+        "name": "_get_ensemble_recommendation",
+        "line": 296,
+        "end": 313,
+        "doc": "Get recommendation based on ensemble analysis."
+      },
+      {
+        "name": "plot_ensemble_analysis",
+        "line": 315,
+        "end": 418,
+        "doc": "Plot ensemble diversity analysis results."
+      },
+      {
+        "name": "generate_ensemble_report",
+        "line": 420,
+        "end": 488,
+        "doc": "Generate ensemble diversity analysis report."
+      }
+    ]
+  },
+  {
+    "path": "src/eval/error_analysis.py",
+    "lines": 436,
+    "sha256": "8721dc1a07869876791c3dca855114f8bab6dcff3ed00e56526ce954029b1578",
+    "symbols": [
+      {
+        "name": "ComprehensiveErrorAnalyzer",
+        "line": 11,
+        "end": 436,
+        "doc": "Comprehensive error analysis and failure mode detection."
+      },
+      {
+        "name": "__init__",
+        "line": 14,
+        "end": 17,
+        "doc": "Initialize error analyzer."
+      },
+      {
+        "name": "compute_error_statistics",
+        "line": 19,
+        "end": 39,
+        "doc": "Compute comprehensive error statistics."
+      },
+      {
+        "name": "detect_outliers",
+        "line": 41,
+        "end": 70,
+        "doc": "Detect outliers in predictions and errors."
+      },
+      {
+        "name": "analyze_error_patterns",
+        "line": 72,
+        "end": 100,
+        "doc": "Analyze spatial and temporal error patterns."
+      },
+      {
+        "name": "cluster_failure_modes",
+        "line": 102,
+        "end": 149,
+        "doc": "Cluster samples to identify failure modes."
+      },
+      {
+        "name": "analyze_prediction_confidence",
+        "line": 151,
+        "end": 181,
+        "doc": "Analyze relationship between prediction confidence and accuracy."
+      },
+      {
+        "name": "comprehensive_error_analysis",
+        "line": 183,
+        "end": 237,
+        "doc": "Run comprehensive error analysis."
+      },
+      {
+        "name": "_identify_dominant_failure_mode",
+        "line": 239,
+        "end": 263,
+        "doc": "Identify the dominant failure mode."
+      },
+      {
+        "name": "plot_error_analysis",
+        "line": 265,
+        "end": 364,
+        "doc": "Plot error analysis results."
+      },
+      {
+        "name": "generate_error_report",
+        "line": 366,
+        "end": 436,
+        "doc": "Generate comprehensive error analysis report."
+      }
+    ]
+  },
+  {
+    "path": "src/eval/evaluate.py",
+    "lines": 62,
+    "sha256": "f5acba0d503fd34e7d189a4c47732018915c5add03a79e325dc0f63306888bad",
+    "symbols": [
+      {
+        "name": "rmse",
+        "line": 5,
+        "end": 6,
+        "doc": ""
+      },
+      {
+        "name": "mae",
+        "line": 8,
+        "end": 9,
+        "doc": ""
+      },
+      {
+        "name": "nll_gaussian",
+        "line": 11,
+        "end": 13,
+        "doc": ""
+      },
+      {
+        "name": "crps_gaussian",
+        "line": 15,
+        "end": 19,
+        "doc": ""
+      },
+      {
+        "name": "coverage",
+        "line": 21,
+        "end": 26,
+        "doc": ""
+      },
+      {
+        "name": "ece_regression",
+        "line": 28,
+        "end": 43,
+        "doc": ""
+      },
+      {
+        "name": "variance_error_correlation",
+        "line": 45,
+        "end": 50,
+        "doc": ""
+      },
+      {
+        "name": "aurc",
+        "line": 52,
+        "end": 62,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/eval/evaluator.py",
+    "lines": 54,
+    "sha256": "8d9834237312a5082164c7c8d406b98851feb6f4255824f380a35dde90be61f5",
+    "symbols": [
+      {
+        "name": "evaluate_baseline",
+        "line": 5,
+        "end": 54,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/eval/metrics.py",
+    "lines": 32,
+    "sha256": "ada535b0051b8c4f2f5f17ab135c00c343ad33476fb8c29c184f954d514d030b",
+    "symbols": [
+      {
+        "name": "rmse",
+        "line": 4,
+        "end": 4,
+        "doc": ""
+      },
+      {
+        "name": "mae",
+        "line": 5,
+        "end": 5,
+        "doc": ""
+      },
+      {
+        "name": "nll_gaussian",
+        "line": 6,
+        "end": 7,
+        "doc": ""
+      },
+      {
+        "name": "crps_gaussian",
+        "line": 8,
+        "end": 10,
+        "doc": ""
+      },
+      {
+        "name": "coverage",
+        "line": 11,
+        "end": 14,
+        "doc": ""
+      },
+      {
+        "name": "ece_regression",
+        "line": 15,
+        "end": 22,
+        "doc": ""
+      },
+      {
+        "name": "variance_error_correlation",
+        "line": 23,
+        "end": 26,
+        "doc": ""
+      },
+      {
+        "name": "aurc",
+        "line": 27,
+        "end": 32,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/eval/multiscale_physics.py",
+    "lines": 573,
+    "sha256": "55e42b6827bb3278558db08730c73ec4c5235d49d5ee016561036654b86e3734",
+    "symbols": [
+      {
+        "name": "MultiScalePhysicsValidator",
+        "line": 11,
+        "end": 573,
+        "doc": "Multi-scale physics validation for turbulence predictions."
+      },
+      {
+        "name": "__init__",
+        "line": 14,
+        "end": 16,
+        "doc": "Initialize multi-scale physics validator."
+      },
+      {
+        "name": "validate_energy_cascade",
+        "line": 18,
+        "end": 78,
+        "doc": "Validate energy cascade across scales using spectral analysis."
+      },
+      {
+        "name": "validate_structure_functions",
+        "line": 80,
+        "end": 143,
+        "doc": "Validate velocity structure functions across scales."
+      },
+      {
+        "name": "validate_wavelet_decomposition",
+        "line": 145,
+        "end": 206,
+        "doc": "Validate multi-scale structure using wavelet decomposition."
+      },
+      {
+        "name": "validate_vorticity_dynamics",
+        "line": 208,
+        "end": 260,
+        "doc": "Validate vorticity dynamics across scales."
+      },
+      {
+        "name": "validate_dissipation_scales",
+        "line": 262,
+        "end": 314,
+        "doc": "Validate dissipation scale characteristics."
+      },
+      {
+        "name": "comprehensive_multiscale_validation",
+        "line": 316,
+        "end": 374,
+        "doc": "Run comprehensive multi-scale physics validation."
+      },
+      {
+        "name": "plot_multiscale_validation",
+        "line": 376,
+        "end": 499,
+        "doc": "Plot multi-scale validation results."
+      },
+      {
+        "name": "generate_multiscale_report",
+        "line": 501,
+        "end": 573,
+        "doc": "Generate multi-scale physics validation report."
+      }
+    ]
+  },
+  {
+    "path": "src/eval/physics_gates.py",
+    "lines": 439,
+    "sha256": "537884eb83c085c1b7eaa8e56d8ec7af0ba7c9b47fe42ca9a040c3252d256fff",
+    "symbols": [
+      {
+        "name": "PhysicsGateValidator",
+        "line": 11,
+        "end": 439,
+        "doc": "Physics admissibility validator with strict pass/fail gates."
+      },
+      {
+        "name": "__init__",
+        "line": 14,
+        "end": 33,
+        "doc": "Initialize physics gate validator."
+      },
+      {
+        "name": "validate_incompressibility",
+        "line": 35,
+        "end": 101,
+        "doc": "Validate incompressibility constraint: \u2207\u00b7u \u2248 0."
+      },
+      {
+        "name": "validate_energy_spectrum",
+        "line": 103,
+        "end": 202,
+        "doc": "Validate energy spectrum and Kolmogorov scaling."
+      },
+      {
+        "name": "validate_wall_law",
+        "line": 204,
+        "end": 300,
+        "doc": "Validate wall law: U\u207a(y\u207a) in viscous and log regions."
+      },
+      {
+        "name": "comprehensive_physics_validation",
+        "line": 302,
+        "end": 366,
+        "doc": "Run comprehensive physics validation with pass/fail gates."
+      },
+      {
+        "name": "generate_physics_report",
+        "line": 368,
+        "end": 439,
+        "doc": "Generate physics validation report with pass/fail assessment."
+      }
+    ]
+  },
+  {
+    "path": "src/eval/reliability.py",
+    "lines": 9,
+    "sha256": "75746364f68ff9f30b04b8c70e4b302067850315b9069ded17acd8bf3ed85505",
+    "symbols": [
+      {
+        "name": "reliability_points",
+        "line": 3,
+        "end": 9,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/eval/spectra.py",
+    "lines": 20,
+    "sha256": "b88e5b2fa0093df61a177fdfc6296a966d6db3b608f6b3b2e6ecf734dfa62f3e",
+    "symbols": [
+      {
+        "name": "radial_spectrum_3d",
+        "line": 2,
+        "end": 10,
+        "doc": ""
+      },
+      {
+        "name": "spectral_error",
+        "line": 11,
+        "end": 20,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/eval/temp_scaling.py",
+    "lines": 16,
+    "sha256": "27f3867fddb5b25582ea99044b89fae0f95e7c2ac43cf24b75738e22284172c7",
+    "symbols": [
+      {
+        "name": "TemperatureScaler",
+        "line": 4,
+        "end": 16,
+        "doc": ""
+      },
+      {
+        "name": "__init__",
+        "line": 5,
+        "end": 5,
+        "doc": ""
+      },
+      {
+        "name": "fit",
+        "line": 6,
+        "end": 16,
+        "doc": ""
+      },
+      {
+        "name": "obj",
+        "line": 15,
+        "end": 15,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/eval/temporal_consistency.py",
+    "lines": 478,
+    "sha256": "6c08c8cc75f1da7f35843e2a868bade16cda30558a5df83241387a90c47a7727",
+    "symbols": [
+      {
+        "name": "TemporalConsistencyValidator",
+        "line": 10,
+        "end": 478,
+        "doc": "Validate temporal consistency of turbulence predictions."
+      },
+      {
+        "name": "__init__",
+        "line": 13,
+        "end": 24,
+        "doc": "Initialize temporal consistency validator."
+      },
+      {
+        "name": "validate_temporal_autocorrelation",
+        "line": 26,
+        "end": 67,
+        "doc": "Validate temporal autocorrelation structure."
+      },
+      {
+        "name": "_compute_autocorrelation",
+        "line": 69,
+        "end": 78,
+        "doc": "Compute autocorrelation function."
+      },
+      {
+        "name": "validate_spectral_consistency",
+        "line": 80,
+        "end": 123,
+        "doc": "Validate temporal spectral consistency."
+      },
+      {
+        "name": "validate_phase_consistency",
+        "line": 125,
+        "end": 167,
+        "doc": "Validate phase consistency in temporal evolution."
+      },
+      {
+        "name": "validate_energy_conservation",
+        "line": 169,
+        "end": 202,
+        "doc": "Validate temporal energy conservation."
+      },
+      {
+        "name": "validate_velocity_divergence_evolution",
+        "line": 204,
+        "end": 238,
+        "doc": "Validate evolution of velocity divergence (incompressibility)."
+      },
+      {
+        "name": "_compute_divergence",
+        "line": 240,
+        "end": 252,
+        "doc": "Compute velocity divergence."
+      },
+      {
+        "name": "comprehensive_temporal_validation",
+        "line": 254,
+        "end": 308,
+        "doc": "Run comprehensive temporal consistency validation."
+      },
+      {
+        "name": "plot_temporal_validation",
+        "line": 310,
+        "end": 425,
+        "doc": "Plot temporal validation results."
+      },
+      {
+        "name": "generate_temporal_report",
+        "line": 427,
+        "end": 478,
+        "doc": "Generate temporal consistency report."
+      }
+    ]
+  },
+  {
+    "path": "src/eval/uncertainty_calibration.py",
+    "lines": 511,
+    "sha256": "a97f1bfd28150805a93bbc5a6dde2bb3faceb6590ac56f7220291158823d5c8c",
+    "symbols": [
+      {
+        "name": "UncertaintyCalibrationDiagnostics",
+        "line": 11,
+        "end": 511,
+        "doc": "Comprehensive uncertainty calibration diagnostics and recalibration."
+      },
+      {
+        "name": "__init__",
+        "line": 14,
+        "end": 16,
+        "doc": "Initialize calibration diagnostics."
+      },
+      {
+        "name": "compute_reliability_diagram",
+        "line": 18,
+        "end": 65,
+        "doc": "Compute reliability diagram for uncertainty calibration."
+      },
+      {
+        "name": "compute_calibration_metrics",
+        "line": 67,
+        "end": 113,
+        "doc": "Compute calibration metrics."
+      },
+      {
+        "name": "compute_coverage_analysis",
+        "line": 115,
+        "end": 145,
+        "doc": "Compute coverage analysis for uncertainty intervals."
+      },
+      {
+        "name": "fit_platt_scaling",
+        "line": 147,
+        "end": 173,
+        "doc": "Fit Platt scaling for uncertainty calibration."
+      },
+      {
+        "name": "fit_isotonic_regression",
+        "line": 175,
+        "end": 196,
+        "doc": "Fit isotonic regression for uncertainty calibration."
+      },
+      {
+        "name": "fit_temperature_scaling",
+        "line": 198,
+        "end": 230,
+        "doc": "Fit temperature scaling for neural network calibration."
+      },
+      {
+        "name": "comprehensive_calibration_analysis",
+        "line": 232,
+        "end": 277,
+        "doc": "Run comprehensive calibration analysis."
+      },
+      {
+        "name": "evaluate_recalibration_methods",
+        "line": 279,
+        "end": 315,
+        "doc": "Evaluate different recalibration methods."
+      },
+      {
+        "name": "plot_calibration_analysis",
+        "line": 317,
+        "end": 429,
+        "doc": "Plot calibration analysis results."
+      },
+      {
+        "name": "generate_calibration_report",
+        "line": 431,
+        "end": 511,
+        "doc": "Generate calibration analysis report."
+      },
+      {
+        "name": "eval_loss",
+        "line": 208,
+        "end": 213,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/interp/__init__.py",
+    "lines": 1,
+    "sha256": "83f0ca72ed5d2600c9d80e4203448ca8e177b131df6656c51aa67f5ee66230ba",
+    "symbols": []
+  },
+  {
+    "path": "src/interp/ale.py",
+    "lines": 402,
+    "sha256": "869da3743ad6cde7a7615070f86361e3fb39fdda10e658f7f2bfe3b325c9f401",
+    "symbols": [
+      {
+        "name": "ALEAnalyzer",
+        "line": 10,
+        "end": 180,
+        "doc": "Accumulated Local Effects (ALE) for model interpretability."
+      },
+      {
+        "name": "TurbulenceALE",
+        "line": 182,
+        "end": 402,
+        "doc": "ALE analysis specialized for turbulence models."
+      },
+      {
+        "name": "__init__",
+        "line": 13,
+        "end": 17,
+        "doc": ""
+      },
+      {
+        "name": "compute_ale_1d",
+        "line": 19,
+        "end": 91,
+        "doc": "Compute 1D ALE for a specific feature."
+      },
+      {
+        "name": "compute_ale_2d",
+        "line": 93,
+        "end": 180,
+        "doc": "Compute 2D ALE for interaction between two features."
+      },
+      {
+        "name": "__init__",
+        "line": 185,
+        "end": 188,
+        "doc": ""
+      },
+      {
+        "name": "analyze_spatial_effects",
+        "line": 190,
+        "end": 218,
+        "doc": "Analyze ALE effects for different spatial regions."
+      },
+      {
+        "name": "_create_regional_features",
+        "line": 220,
+        "end": 272,
+        "doc": "Create features representing different spatial regions."
+      },
+      {
+        "name": "analyze_velocity_component_effects",
+        "line": 274,
+        "end": 298,
+        "doc": "Analyze ALE effects for different velocity components."
+      },
+      {
+        "name": "_extract_velocity_features",
+        "line": 300,
+        "end": 333,
+        "doc": "Extract velocity-based features for ALE analysis."
+      },
+      {
+        "name": "plot_ale_results",
+        "line": 335,
+        "end": 375,
+        "doc": "Plot ALE analysis results."
+      },
+      {
+        "name": "compute_ale_importance_ranking",
+        "line": 377,
+        "end": 402,
+        "doc": "Compute importance ranking based on ALE effect magnitudes."
+      }
+    ]
+  },
+  {
+    "path": "src/interp/germano_coeff.py",
+    "lines": 480,
+    "sha256": "2c1c13b4bbef2b741ef3fe17cea12ad1a9116e847e977399b8e975ee8ef91419",
+    "symbols": [
+      {
+        "name": "GermanoCoeffRecovery",
+        "line": 11,
+        "end": 480,
+        "doc": "Germano dynamic procedure for effective Smagorinsky coefficient recovery."
+      },
+      {
+        "name": "__init__",
+        "line": 14,
+        "end": 24,
+        "doc": "Initialize Germano coefficient recovery."
+      },
+      {
+        "name": "apply_filter_3d",
+        "line": 26,
+        "end": 55,
+        "doc": "Apply 3D spatial filter to velocity field."
+      },
+      {
+        "name": "compute_strain_rate_tensor",
+        "line": 57,
+        "end": 92,
+        "doc": "Compute strain rate tensor and its magnitude."
+      },
+      {
+        "name": "compute_leonard_stress",
+        "line": 94,
+        "end": 129,
+        "doc": "Compute Leonard stress tensor L_ij = \u00fb_i \u00fb_j - \u00fb_i * \u00fb_j."
+      },
+      {
+        "name": "compute_model_tensor_m",
+        "line": 131,
+        "end": 182,
+        "doc": "Compute model tensor M_ij for Germano identity."
+      },
+      {
+        "name": "compute_dynamic_coefficient",
+        "line": 184,
+        "end": 246,
+        "doc": "Compute dynamic Smagorinsky coefficient using Germano identity."
+      },
+      {
+        "name": "compute_yplus_coordinates",
+        "line": 248,
+        "end": 275,
+        "doc": "Compute Y+ coordinates for channel flow."
+      },
+      {
+        "name": "aggregate_coefficient_by_yplus",
+        "line": 277,
+        "end": 348,
+        "doc": "Aggregate effective coefficient by Y+ bands."
+      },
+      {
+        "name": "analyze_coefficient_reliability",
+        "line": 350,
+        "end": 411,
+        "doc": "Analyze correlation between coefficient drift and prediction error/uncertainty."
+      },
+      {
+        "name": "plot_coefficient_profiles",
+        "line": 413,
+        "end": 480,
+        "doc": "Plot effective Smagorinsky coefficient profiles."
+      }
+    ]
+  },
+  {
+    "path": "src/interp/grad.py",
+    "lines": 117,
+    "sha256": "ca4fbf71d524eb1aec28283c254477054b31508d1420e76ecd6c8978bfd8de51",
+    "symbols": [
+      {
+        "name": "integrated_gradients",
+        "line": 6,
+        "end": 63,
+        "doc": "Compute Integrated Gradients for 3D input."
+      },
+      {
+        "name": "gradient_shap",
+        "line": 65,
+        "end": 117,
+        "doc": "Compute GradientSHAP for 3D input using noise baselines."
+      }
+    ]
+  },
+  {
+    "path": "src/interp/gradcam.py",
+    "lines": 292,
+    "sha256": "71451461d8d23916279efcaff08664fa456ed9f35f9f0d584b9e1c4bdc2daaff",
+    "symbols": [
+      {
+        "name": "GradCAM",
+        "line": 9,
+        "end": 147,
+        "doc": "Gradient-weighted Class Activation Mapping for 3D velocity fields."
+      },
+      {
+        "name": "VelocityFieldGradCAM",
+        "line": 149,
+        "end": 292,
+        "doc": "Specialized GradCAM for turbulence velocity fields."
+      },
+      {
+        "name": "__init__",
+        "line": 12,
+        "end": 26,
+        "doc": "Initialize GradCAM."
+      },
+      {
+        "name": "_register_hooks",
+        "line": 28,
+        "end": 43,
+        "doc": "Register forward and backward hooks."
+      },
+      {
+        "name": "generate_cam",
+        "line": 45,
+        "end": 94,
+        "doc": "Generate Class Activation Maps."
+      },
+      {
+        "name": "_normalize_cam",
+        "line": 96,
+        "end": 102,
+        "doc": "Normalize CAM to [0, 1]."
+      },
+      {
+        "name": "generate_velocity_cam",
+        "line": 104,
+        "end": 142,
+        "doc": "Generate CAM for specific velocity component."
+      },
+      {
+        "name": "cleanup",
+        "line": 144,
+        "end": 147,
+        "doc": "Remove hooks."
+      },
+      {
+        "name": "__init__",
+        "line": 152,
+        "end": 156,
+        "doc": "Initialize with automatic layer detection."
+      },
+      {
+        "name": "_find_target_layers",
+        "line": 158,
+        "end": 174,
+        "doc": "Automatically find suitable layers for GradCAM."
+      },
+      {
+        "name": "analyze_velocity_importance",
+        "line": 176,
+        "end": 195,
+        "doc": "Analyze importance of different regions for velocity prediction."
+      },
+      {
+        "name": "visualize_cams",
+        "line": 197,
+        "end": 215,
+        "doc": "Visualize GradCAM results."
+      },
+      {
+        "name": "_plot_cam_slices",
+        "line": 217,
+        "end": 267,
+        "doc": "Plot CAM overlaid on input slices."
+      },
+      {
+        "name": "get_importance_statistics",
+        "line": 269,
+        "end": 288,
+        "doc": "Compute statistics from GradCAM results."
+      },
+      {
+        "name": "cleanup",
+        "line": 290,
+        "end": 292,
+        "doc": "Clean up hooks."
+      },
+      {
+        "name": "forward_hook",
+        "line": 30,
+        "end": 33,
+        "doc": ""
+      },
+      {
+        "name": "backward_hook",
+        "line": 35,
+        "end": 38,
+        "doc": ""
+      },
+      {
+        "name": "hook",
+        "line": 31,
+        "end": 32,
+        "doc": ""
+      },
+      {
+        "name": "hook",
+        "line": 36,
+        "end": 37,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/interp/occlusion3d.py",
+    "lines": 155,
+    "sha256": "048da50b17a2dd83a4b78b523c5002b3fb3a7f401ba98c304466f2491e9c84f6",
+    "symbols": [
+      {
+        "name": "occlusion_importance",
+        "line": 6,
+        "end": 69,
+        "doc": "Compute occlusion-based importance for 3D input."
+      },
+      {
+        "name": "blur_occlusion_importance",
+        "line": 71,
+        "end": 155,
+        "doc": "Compute occlusion-based importance using Gaussian blur instead of zeroing."
+      }
+    ]
+  },
+  {
+    "path": "src/interp/shap_analysis.py",
+    "lines": 321,
+    "sha256": "853b0ddfb70573bcb54da4263aeecf8c2118a66a6eed32cc3763dcb15177bf3f",
+    "symbols": [
+      {
+        "name": "TurbulenceSHAP",
+        "line": 10,
+        "end": 296,
+        "doc": "SHAP analysis for turbulence models with uncertainty quantification."
+      },
+      {
+        "name": "DeepSHAP",
+        "line": 298,
+        "end": 321,
+        "doc": "DeepSHAP implementation for neural networks."
+      },
+      {
+        "name": "__init__",
+        "line": 13,
+        "end": 17,
+        "doc": ""
+      },
+      {
+        "name": "create_background_dataset",
+        "line": 19,
+        "end": 28,
+        "doc": "Create background dataset for SHAP analysis."
+      },
+      {
+        "name": "model_wrapper",
+        "line": 30,
+        "end": 40,
+        "doc": "Wrapper function for SHAP that returns numpy arrays."
+      },
+      {
+        "name": "uncertainty_wrapper",
+        "line": 42,
+        "end": 62,
+        "doc": "Wrapper that returns uncertainty estimates."
+      },
+      {
+        "name": "analyze_prediction_drivers",
+        "line": 64,
+        "end": 108,
+        "doc": "Analyze what drives model predictions using SHAP."
+      },
+      {
+        "name": "analyze_uncertainty_drivers",
+        "line": 110,
+        "end": 152,
+        "doc": "Analyze what drives model uncertainty using SHAP."
+      },
+      {
+        "name": "create_spatial_shap_maps",
+        "line": 154,
+        "end": 168,
+        "doc": "Create spatial SHAP importance maps."
+      },
+      {
+        "name": "_plot_spatial_shap",
+        "line": 170,
+        "end": 234,
+        "doc": "Plot spatial SHAP maps."
+      },
+      {
+        "name": "compute_feature_importance",
+        "line": 236,
+        "end": 255,
+        "doc": "Compute global feature importance from SHAP values."
+      },
+      {
+        "name": "create_summary_plots",
+        "line": 257,
+        "end": 296,
+        "doc": "Create SHAP summary plots."
+      },
+      {
+        "name": "__init__",
+        "line": 301,
+        "end": 304,
+        "doc": ""
+      },
+      {
+        "name": "analyze",
+        "line": 306,
+        "end": 321,
+        "doc": "Analyze using DeepSHAP."
+      }
+    ]
+  },
+  {
+    "path": "src/interp/sobol.py",
+    "lines": 291,
+    "sha256": "965d62e3eac5936dbc3f8731ddce192ba16f5614ddaee0f9e60121b6bf70d218",
+    "symbols": [
+      {
+        "name": "SobolAnalyzer",
+        "line": 10,
+        "end": 100,
+        "doc": "Sobol sensitivity analysis for neural network models."
+      },
+      {
+        "name": "TurbulenceSobolAnalyzer",
+        "line": 102,
+        "end": 253,
+        "doc": "Specialized Sobol analyzer for turbulence models."
+      },
+      {
+        "name": "plot_sobol_results",
+        "line": 255,
+        "end": 291,
+        "doc": "Plot Sobol sensitivity analysis results."
+      },
+      {
+        "name": "__init__",
+        "line": 13,
+        "end": 34,
+        "doc": "Initialize Sobol analyzer."
+      },
+      {
+        "name": "generate_samples",
+        "line": 36,
+        "end": 38,
+        "doc": "Generate Saltelli samples for Sobol analysis."
+      },
+      {
+        "name": "evaluate_model",
+        "line": 40,
+        "end": 79,
+        "doc": "Evaluate model on samples."
+      },
+      {
+        "name": "analyze",
+        "line": 81,
+        "end": 84,
+        "doc": "Perform Sobol analysis."
+      },
+      {
+        "name": "run_full_analysis",
+        "line": 86,
+        "end": 100,
+        "doc": "Run complete Sobol sensitivity analysis."
+      },
+      {
+        "name": "__init__",
+        "line": 105,
+        "end": 109,
+        "doc": ""
+      },
+      {
+        "name": "analyze_velocity_sensitivity",
+        "line": 111,
+        "end": 161,
+        "doc": "Analyze sensitivity to velocity field perturbations."
+      },
+      {
+        "name": "_get_base_output",
+        "line": 163,
+        "end": 166,
+        "doc": "Get base model output."
+      },
+      {
+        "name": "_create_perturbed_input",
+        "line": 168,
+        "end": 191,
+        "doc": "Create spatially perturbed input."
+      },
+      {
+        "name": "analyze_parameter_sensitivity",
+        "line": 193,
+        "end": 253,
+        "doc": "Analyze sensitivity to model parameters."
+      }
+    ]
+  },
+  {
+    "path": "src/metrics/__init__.py",
+    "lines": 1,
+    "sha256": "d4027035f339219a4d272d69ce73a5c59129bf0d654c3bd77cfbf0659b166f89",
+    "symbols": []
+  },
+  {
+    "path": "src/metrics/calibration.py",
+    "lines": 310,
+    "sha256": "555a5345d40fbe85159ebfabc82dbc288d08232d32abb466eba2708a34a8c86c",
+    "symbols": [
+      {
+        "name": "reliability_diagram_bins",
+        "line": 9,
+        "end": 81,
+        "doc": "Compute reliability diagram data for calibration assessment."
+      },
+      {
+        "name": "expected_calibration_error",
+        "line": 83,
+        "end": 115,
+        "doc": "Compute Expected Calibration Error (ECE)."
+      },
+      {
+        "name": "maximum_calibration_error",
+        "line": 117,
+        "end": 142,
+        "doc": "Compute Maximum Calibration Error (MCE)."
+      },
+      {
+        "name": "sharpness_metric",
+        "line": 144,
+        "end": 155,
+        "doc": "Compute sharpness (average predicted uncertainty).\nLower values indicate sharper (more confident) predictions."
+      },
+      {
+        "name": "coverage_metrics",
+        "line": 157,
+        "end": 184,
+        "doc": "Compute coverage metrics for different confidence levels."
+      },
+      {
+        "name": "interval_score",
+        "line": 186,
+        "end": 212,
+        "doc": "Compute interval score for prediction intervals.\nLower is better."
+      },
+      {
+        "name": "prediction_interval_coverage_probability",
+        "line": 214,
+        "end": 229,
+        "doc": "Compute empirical coverage probability for prediction intervals."
+      },
+      {
+        "name": "compute_all_calibration_metrics",
+        "line": 231,
+        "end": 270,
+        "doc": "Compute comprehensive calibration metrics."
+      },
+      {
+        "name": "calibration_slope_intercept",
+        "line": 272,
+        "end": 310,
+        "doc": "Compute calibration slope and intercept via linear regression.\nWell-calibrated predictions should have slope \u2248 1, intercept \u2248 0."
+      }
+    ]
+  },
+  {
+    "path": "src/models/gpr.py",
+    "lines": 213,
+    "sha256": "916995813ac741288ee324ab989cd82b257af047882de327935b4710c4f3b4c3",
+    "symbols": [
+      {
+        "name": "TurbulenceGPR",
+        "line": 12,
+        "end": 180,
+        "doc": "Gaussian Process Regression for turbulence modeling with dimensionality reduction."
+      },
+      {
+        "name": "SparseGPR",
+        "line": 182,
+        "end": 213,
+        "doc": "Sparse GPR using inducing points for scalability."
+      },
+      {
+        "name": "__init__",
+        "line": 15,
+        "end": 30,
+        "doc": ""
+      },
+      {
+        "name": "_get_kernel",
+        "line": 32,
+        "end": 39,
+        "doc": "Get kernel based on type."
+      },
+      {
+        "name": "_flatten_spatial",
+        "line": 41,
+        "end": 48,
+        "doc": "Flatten spatial dimensions: (N, C, H, W) -> (N, C*H*W)"
+      },
+      {
+        "name": "_unflatten_spatial",
+        "line": 50,
+        "end": 52,
+        "doc": "Unflatten to original spatial dimensions."
+      },
+      {
+        "name": "fit",
+        "line": 54,
+        "end": 104,
+        "doc": "Fit GPR model."
+      },
+      {
+        "name": "predict",
+        "line": 106,
+        "end": 159,
+        "doc": "Make predictions with uncertainty."
+      },
+      {
+        "name": "score",
+        "line": 161,
+        "end": 172,
+        "doc": "Compute R\u00b2 score."
+      },
+      {
+        "name": "get_marginal_likelihood",
+        "line": 174,
+        "end": 180,
+        "doc": "Get average log marginal likelihood across all GPs."
+      },
+      {
+        "name": "__init__",
+        "line": 185,
+        "end": 194,
+        "doc": ""
+      },
+      {
+        "name": "_select_inducing_points",
+        "line": 196,
+        "end": 202,
+        "doc": "Select inducing points using k-means clustering."
+      },
+      {
+        "name": "fit",
+        "line": 204,
+        "end": 209,
+        "doc": "Fit sparse GPR (simplified implementation)."
+      },
+      {
+        "name": "predict",
+        "line": 211,
+        "end": 213,
+        "doc": "Predict with sparse GPR."
+      }
+    ]
+  },
+  {
+    "path": "src/models/sindy.py",
+    "lines": 191,
+    "sha256": "14eca1e00651247dd50116e313ec6de6ff3bcc4452c26d9d6248e408b97fd59d",
+    "symbols": [
+      {
+        "name": "SINDyLibrary",
+        "line": 9,
+        "end": 75,
+        "doc": "Sparse Identification of Nonlinear Dynamics (SINDy) feature library."
+      },
+      {
+        "name": "SINDyRegressor",
+        "line": 77,
+        "end": 147,
+        "doc": "SINDy sparse regression model."
+      },
+      {
+        "name": "TurbulenceSINDy",
+        "line": 149,
+        "end": 191,
+        "doc": "SINDy specifically for turbulence modeling."
+      },
+      {
+        "name": "__init__",
+        "line": 12,
+        "end": 18,
+        "doc": ""
+      },
+      {
+        "name": "fit_transform",
+        "line": 20,
+        "end": 71,
+        "doc": "Build library of candidate functions."
+      },
+      {
+        "name": "transform",
+        "line": 73,
+        "end": 75,
+        "doc": "Transform new data using fitted library."
+      },
+      {
+        "name": "__init__",
+        "line": 80,
+        "end": 89,
+        "doc": ""
+      },
+      {
+        "name": "fit",
+        "line": 91,
+        "end": 115,
+        "doc": "Fit SINDy model."
+      },
+      {
+        "name": "predict",
+        "line": 117,
+        "end": 120,
+        "doc": "Make predictions."
+      },
+      {
+        "name": "get_equations",
+        "line": 122,
+        "end": 147,
+        "doc": "Get discovered equations in human-readable form."
+      },
+      {
+        "name": "__init__",
+        "line": 152,
+        "end": 167,
+        "doc": ""
+      },
+      {
+        "name": "fit",
+        "line": 169,
+        "end": 178,
+        "doc": "Fit SINDy to turbulence data."
+      },
+      {
+        "name": "predict",
+        "line": 180,
+        "end": 182,
+        "doc": "Predict time derivatives."
+      },
+      {
+        "name": "get_turbulence_equations",
+        "line": 184,
+        "end": 186,
+        "doc": "Get discovered turbulence equations."
+      },
+      {
+        "name": "score",
+        "line": 188,
+        "end": 191,
+        "doc": "Compute R\u00b2 score."
+      }
+    ]
+  },
+  {
+    "path": "src/models/spectral_mixer.py",
+    "lines": 8,
+    "sha256": "9c9134ceb94d564b1483b40f7d47bfd77bdf7c4d2e0580e94a9c218c3626cdc4",
+    "symbols": [
+      {
+        "name": "SpectralMixer3D",
+        "line": 2,
+        "end": 8,
+        "doc": ""
+      },
+      {
+        "name": "__init__",
+        "line": 3,
+        "end": 4,
+        "doc": ""
+      },
+      {
+        "name": "forward",
+        "line": 5,
+        "end": 8,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/models/unet3d.py",
+    "lines": 52,
+    "sha256": "1b8adbaa8f0040556c6e11629cac023ac8fb8b55bf2b8cf130a0e13cc5c6e274",
+    "symbols": [
+      {
+        "name": "convbn",
+        "line": 2,
+        "end": 8,
+        "doc": ""
+      },
+      {
+        "name": "UNet3D",
+        "line": 10,
+        "end": 52,
+        "doc": ""
+      },
+      {
+        "name": "__init__",
+        "line": 11,
+        "end": 28,
+        "doc": ""
+      },
+      {
+        "name": "enable_mc_dropout",
+        "line": 29,
+        "end": 34,
+        "doc": ""
+      },
+      {
+        "name": "forward",
+        "line": 35,
+        "end": 52,
+        "doc": ""
+      },
+      {
+        "name": "setp",
+        "line": 30,
+        "end": 31,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/models/variational_unet3d.py",
+    "lines": 199,
+    "sha256": "1b1953ce9d0baeee03ec5fd76d8c82706ce1c095cc64780d4ab8096c5c16c433",
+    "symbols": [
+      {
+        "name": "VariationalConv3d",
+        "line": 6,
+        "end": 77,
+        "doc": "Variational 3D Convolution layer with reparameterization trick."
+      },
+      {
+        "name": "variational_convbn",
+        "line": 79,
+        "end": 90,
+        "doc": "Variational convolution + batch norm + activation block."
+      },
+      {
+        "name": "VariationalUNet3D",
+        "line": 92,
+        "end": 199,
+        "doc": "3D U-Net with variational (Bayesian) layers for uncertainty quantification."
+      },
+      {
+        "name": "__init__",
+        "line": 9,
+        "end": 29,
+        "doc": ""
+      },
+      {
+        "name": "reset_parameters",
+        "line": 31,
+        "end": 39,
+        "doc": ""
+      },
+      {
+        "name": "forward",
+        "line": 41,
+        "end": 57,
+        "doc": ""
+      },
+      {
+        "name": "kl_divergence",
+        "line": 59,
+        "end": 77,
+        "doc": "Compute KL divergence between posterior and prior."
+      },
+      {
+        "name": "__init__",
+        "line": 95,
+        "end": 146,
+        "doc": ""
+      },
+      {
+        "name": "forward",
+        "line": 148,
+        "end": 175,
+        "doc": ""
+      },
+      {
+        "name": "raw_kl_divergence",
+        "line": 177,
+        "end": 183,
+        "doc": "Compute raw KL divergence for all variational layers (no weighting)."
+      },
+      {
+        "name": "kl_divergence",
+        "line": 185,
+        "end": 187,
+        "doc": "Compute weighted KL divergence (legacy method for backward compatibility)."
+      },
+      {
+        "name": "sample_predictions",
+        "line": 189,
+        "end": 199,
+        "doc": "Generate multiple predictions by sampling from posterior."
+      }
+    ]
+  },
+  {
+    "path": "src/physics/__init__.py",
+    "lines": 1,
+    "sha256": "10fcb3ba539e8c38070c68e2bf294b19c9c50f772973439c03d62c8d01ac5e9c",
+    "symbols": []
+  },
+  {
+    "path": "src/physics/fields.py",
+    "lines": 292,
+    "sha256": "0b71fdabcd8e266247d31da81102595d9fd48f80ac3d0eb8b3508fe133fa8ff6",
+    "symbols": [
+      {
+        "name": "compute_divergence_3d",
+        "line": 8,
+        "end": 29,
+        "doc": "Compute divergence of 3D velocity field using finite differences."
+      },
+      {
+        "name": "compute_vorticity_3d",
+        "line": 31,
+        "end": 63,
+        "doc": "Compute vorticity (curl) of 3D velocity field."
+      },
+      {
+        "name": "compute_strain_rate_tensor",
+        "line": 65,
+        "end": 107,
+        "doc": "Compute strain rate tensor S_ij = 0.5 * (du_i/dx_j + du_j/dx_i)."
+      },
+      {
+        "name": "compute_enstrophy",
+        "line": 109,
+        "end": 122,
+        "doc": "Compute enstrophy (0.5 * |omega|^2) of velocity field."
+      },
+      {
+        "name": "compute_kinetic_energy",
+        "line": 124,
+        "end": 135,
+        "doc": "Compute mean kinetic energy of velocity field."
+      },
+      {
+        "name": "compute_dissipation_rate",
+        "line": 137,
+        "end": 157,
+        "doc": "Compute viscous dissipation rate epsilon = 2*nu*S_ij*S_ij."
+      },
+      {
+        "name": "check_incompressibility",
+        "line": 159,
+        "end": 189,
+        "doc": "Check incompressibility constraint (div(u) = 0)."
+      },
+      {
+        "name": "compute_reynolds_stress_tensor",
+        "line": 191,
+        "end": 211,
+        "doc": "Compute Reynolds stress tensor R_ij = <u'_i * u'_j> where u' are fluctuations."
+      },
+      {
+        "name": "compute_turbulent_kinetic_energy",
+        "line": 213,
+        "end": 225,
+        "doc": "Compute turbulent kinetic energy k = 0.5 * <u'_i * u'_i>."
+      },
+      {
+        "name": "validate_field_physics",
+        "line": 227,
+        "end": 276,
+        "doc": "Comprehensive physics validation of velocity field."
+      },
+      {
+        "name": "_compute_skewness",
+        "line": 278,
+        "end": 284,
+        "doc": "Compute skewness of field."
+      },
+      {
+        "name": "_compute_kurtosis",
+        "line": 286,
+        "end": 292,
+        "doc": "Compute kurtosis of field."
+      }
+    ]
+  },
+  {
+    "path": "src/physics/q_criterion.py",
+    "lines": 500,
+    "sha256": "bc68a9a9dede36ae790b9a2d7cec1bcedc1c5ab95ee798dd0c37f9a7ac87ecb5",
+    "symbols": [
+      {
+        "name": "QCriterionAnalyzer",
+        "line": 10,
+        "end": 339,
+        "doc": "Q-criterion analysis for turbulent flow visualization."
+      },
+      {
+        "name": "TurbulenceVisualization",
+        "line": 341,
+        "end": 500,
+        "doc": "Comprehensive turbulence visualization including Q-criterion."
+      },
+      {
+        "name": "__init__",
+        "line": 13,
+        "end": 14,
+        "doc": ""
+      },
+      {
+        "name": "compute_q_criterion",
+        "line": 16,
+        "end": 63,
+        "doc": "Compute Q-criterion from velocity field."
+      },
+      {
+        "name": "extract_isosurfaces",
+        "line": 65,
+        "end": 112,
+        "doc": "Extract Q-criterion isosurfaces using marching cubes."
+      },
+      {
+        "name": "visualize_isosurfaces_matplotlib",
+        "line": 114,
+        "end": 182,
+        "doc": "Visualize Q-criterion isosurfaces using matplotlib."
+      },
+      {
+        "name": "visualize_isosurfaces_plotly",
+        "line": 184,
+        "end": 232,
+        "doc": "Create interactive Q-criterion isosurface visualization using Plotly."
+      },
+      {
+        "name": "compute_isosurface_statistics",
+        "line": 234,
+        "end": 257,
+        "doc": "Compute statistics for Q-criterion isosurfaces."
+      },
+      {
+        "name": "_estimate_volume",
+        "line": 259,
+        "end": 278,
+        "doc": "Estimate volume of mesh using divergence theorem."
+      },
+      {
+        "name": "_estimate_surface_area",
+        "line": 280,
+        "end": 293,
+        "doc": "Estimate surface area of mesh."
+      },
+      {
+        "name": "analyze_q_criterion_evolution",
+        "line": 295,
+        "end": 339,
+        "doc": "Analyze Q-criterion evolution over time."
+      },
+      {
+        "name": "__init__",
+        "line": 344,
+        "end": 345,
+        "doc": ""
+      },
+      {
+        "name": "create_comprehensive_visualization",
+        "line": 347,
+        "end": 423,
+        "doc": "Create comprehensive turbulence visualization."
+      },
+      {
+        "name": "compare_q_criterion",
+        "line": 425,
+        "end": 457,
+        "doc": "Compare Q-criterion between different velocity fields (e.g., prediction vs truth)."
+      },
+      {
+        "name": "_create_comparison_plots",
+        "line": 459,
+        "end": 500,
+        "doc": "Create comparison plots for multiple Q-criterion analyses."
+      }
+    ]
+  },
+  {
+    "path": "src/physics/spectrum.py",
+    "lines": 305,
+    "sha256": "a68dca12dd939758781c405ee9de9d5ae55dc1360bd41df9112258982ddbffcf",
+    "symbols": [
+      {
+        "name": "compute_3d_fft",
+        "line": 8,
+        "end": 18,
+        "doc": "Compute 3D FFT of a field."
+      },
+      {
+        "name": "compute_wavenumber_grid",
+        "line": 20,
+        "end": 44,
+        "doc": "Compute wavenumber grids for 3D FFT."
+      },
+      {
+        "name": "compute_energy_spectrum_3d",
+        "line": 46,
+        "end": 101,
+        "doc": "Compute 3D energy spectrum E(k) from velocity field."
+      },
+      {
+        "name": "compute_kolmogorov_spectrum",
+        "line": 103,
+        "end": 115,
+        "doc": "Compute theoretical Kolmogorov -5/3 energy spectrum."
+      },
+      {
+        "name": "fit_inertial_range",
+        "line": 117,
+        "end": 173,
+        "doc": "Fit power law to inertial range of energy spectrum."
+      },
+      {
+        "name": "compute_integral_length_scale",
+        "line": 175,
+        "end": 203,
+        "doc": "Compute integral length scale from energy spectrum.\nL = (3\u03c0/4) * \u222b E(k)/k dk / \u222b E(k) dk"
+      },
+      {
+        "name": "compute_taylor_microscale",
+        "line": 205,
+        "end": 236,
+        "doc": "Compute Taylor microscale \u03bb from velocity field.\n\u03bb = sqrt(15 * \u03bd * <u\u00b2> / \u03b5)"
+      },
+      {
+        "name": "compute_kolmogorov_scale",
+        "line": 238,
+        "end": 253,
+        "doc": "Compute Kolmogorov length scale \u03b7 = (\u03bd\u00b3/\u03b5)^(1/4)."
+      },
+      {
+        "name": "analyze_energy_spectrum",
+        "line": 255,
+        "end": 305,
+        "doc": "Comprehensive energy spectrum analysis."
+      }
+    ]
+  },
+  {
+    "path": "src/train/losses.py",
+    "lines": 102,
+    "sha256": "5c0c974abb5792b09ff816f74c83027b3907c07c1e636ecc89a0ce4103960ef6",
+    "symbols": [
+      {
+        "name": "GaussianNLL",
+        "line": 2,
+        "end": 5,
+        "doc": ""
+      },
+      {
+        "name": "spectral_mse",
+        "line": 6,
+        "end": 8,
+        "doc": ""
+      },
+      {
+        "name": "physics_informed_loss",
+        "line": 10,
+        "end": 43,
+        "doc": "Physics-informed loss with Navier-Stokes constraints for 3D channel flow."
+      },
+      {
+        "name": "variational_elbo_loss",
+        "line": 45,
+        "end": 69,
+        "doc": "Variational ELBO loss = reconstruction loss + weighted KL divergence"
+      },
+      {
+        "name": "make_loss",
+        "line": 71,
+        "end": 102,
+        "doc": ""
+      },
+      {
+        "name": "__init__",
+        "line": 3,
+        "end": 3,
+        "doc": ""
+      },
+      {
+        "name": "forward",
+        "line": 4,
+        "end": 5,
+        "doc": ""
+      },
+      {
+        "name": "fn",
+        "line": 77,
+        "end": 81,
+        "doc": ""
+      },
+      {
+        "name": "fn",
+        "line": 87,
+        "end": 91,
+        "doc": ""
+      },
+      {
+        "name": "fn",
+        "line": 95,
+        "end": 95,
+        "doc": ""
+      },
+      {
+        "name": "fn",
+        "line": 98,
+        "end": 101,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/train/physics_trainer.py",
+    "lines": 188,
+    "sha256": "3b3e883245361c0483ec8ab65b7eea235ce4f5bdd8a5520f3cabe796686052d5",
+    "symbols": [
+      {
+        "name": "physics_train_loop",
+        "line": 8,
+        "end": 188,
+        "doc": "Physics-informed training loop with Navier-Stokes constraints."
+      }
+    ]
+  },
+  {
+    "path": "src/train/swa.py",
+    "lines": 150,
+    "sha256": "c1780762f2474a98abe4801f055db98b9b75ede4c344db306bf0eb5bf41a03ad",
+    "symbols": [
+      {
+        "name": "create_swa_model",
+        "line": 12,
+        "end": 14,
+        "doc": "Create SWA averaged model wrapper."
+      },
+      {
+        "name": "create_swa_scheduler",
+        "line": 16,
+        "end": 18,
+        "doc": "Create SWA learning rate scheduler."
+      },
+      {
+        "name": "update_bn_stats",
+        "line": 20,
+        "end": 26,
+        "doc": "Update batch normalization statistics for SWA model."
+      },
+      {
+        "name": "swa_train_epoch",
+        "line": 28,
+        "end": 78,
+        "doc": "Train one epoch with SWA updates."
+      },
+      {
+        "name": "evaluate_swa_model",
+        "line": 80,
+        "end": 109,
+        "doc": "Evaluate SWA model on validation set."
+      },
+      {
+        "name": "save_swa_checkpoint",
+        "line": 111,
+        "end": 122,
+        "doc": "Save SWA checkpoint."
+      },
+      {
+        "name": "load_swa_checkpoint",
+        "line": 124,
+        "end": 136,
+        "doc": "Load SWA checkpoint."
+      },
+      {
+        "name": "swa_predict",
+        "line": 138,
+        "end": 150,
+        "doc": "Make predictions using SWA model."
+      }
+    ]
+  },
+  {
+    "path": "src/train/swag_trainer.py",
+    "lines": 213,
+    "sha256": "a04707869b5b7d46286928986fc21109850c082656e45de07d9a9e553e7a3806",
+    "symbols": [
+      {
+        "name": "swag_train_loop",
+        "line": 12,
+        "end": 205,
+        "doc": "Training loop for SWAG models with weight averaging."
+      },
+      {
+        "name": "update_bn_stats",
+        "line": 207,
+        "end": 213,
+        "doc": "Update batch normalization statistics for SWA model."
+      }
+    ]
+  },
+  {
+    "path": "src/train/trainer.py",
+    "lines": 105,
+    "sha256": "66e752ca5a9554862c99585e5064667839389a852bf97a72241bd42f4e715135",
+    "symbols": [
+      {
+        "name": "save_ckpt",
+        "line": 4,
+        "end": 5,
+        "doc": ""
+      },
+      {
+        "name": "train_loop",
+        "line": 6,
+        "end": 105,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/train/variational_trainer.py",
+    "lines": 175,
+    "sha256": "0e0eb238241fe94b637512ecc7b7306e6777c551f91863aad2fcfae494218b9e",
+    "symbols": [
+      {
+        "name": "variational_train_loop",
+        "line": 6,
+        "end": 175,
+        "doc": "Training loop for variational models with KL divergence and \u03b2 warm-up."
+      }
+    ]
+  },
+  {
+    "path": "src/uq/__init__.py",
+    "lines": 1,
+    "sha256": "284d128cc74b0bfbf3b5aa39048791b56201fe228d950add30eec42f4fd85ae5",
+    "symbols": []
+  },
+  {
+    "path": "src/uq/conformal.py",
+    "lines": 127,
+    "sha256": "e7e4a12a57461ae1d27a7247352734dba8cc94262a680aba7dfff820aaf2353c",
+    "symbols": [
+      {
+        "name": "compute_residuals",
+        "line": 6,
+        "end": 24,
+        "doc": "Compute L1 residuals per sample."
+      },
+      {
+        "name": "fit_conformal",
+        "line": 26,
+        "end": 42,
+        "doc": "Fit conformal quantile from validation residuals."
+      },
+      {
+        "name": "apply_conformal",
+        "line": 44,
+        "end": 69,
+        "doc": "Apply conformal prediction to get prediction intervals."
+      },
+      {
+        "name": "compute_coverage_metrics",
+        "line": 71,
+        "end": 104,
+        "doc": "Compute coverage metrics for prediction intervals."
+      },
+      {
+        "name": "compute_adaptive_coverage",
+        "line": 106,
+        "end": 127,
+        "doc": "Compute coverage at multiple confidence levels."
+      }
+    ]
+  },
+  {
+    "path": "src/uq/ensemble.py",
+    "lines": 1,
+    "sha256": "eab0e660abb1c232b445fc8cdc70c8e7781fc9d56f1b56734f0f30ddf958bcb4",
+    "symbols": []
+  },
+  {
+    "path": "src/uq/ensembles.py",
+    "lines": 144,
+    "sha256": "a0d82d59b17477f176e44d4acf57bdb0ff40925ed93ae0257337566f5077bbe2",
+    "symbols": [
+      {
+        "name": "build_member",
+        "line": 15,
+        "end": 29,
+        "doc": "Build a fresh ensemble member with given seed."
+      },
+      {
+        "name": "train_ensemble",
+        "line": 31,
+        "end": 72,
+        "doc": "Train ensemble members with different seeds."
+      },
+      {
+        "name": "ensemble_predict",
+        "line": 74,
+        "end": 109,
+        "doc": "Run ensemble prediction and compute statistics."
+      },
+      {
+        "name": "compute_ensemble_metrics",
+        "line": 111,
+        "end": 144,
+        "doc": "Compute per-sample metrics for ensemble predictions."
+      }
+    ]
+  },
+  {
+    "path": "src/uq/mc_dropout.py",
+    "lines": 45,
+    "sha256": "8f338b89b1e003210377fa4cc08fec9cf360c20c89b451bb05bc4607f18c4e39",
+    "symbols": [
+      {
+        "name": "mc_predict",
+        "line": 6,
+        "end": 31,
+        "doc": ""
+      },
+      {
+        "name": "gaussian_nll",
+        "line": 33,
+        "end": 36,
+        "doc": ""
+      },
+      {
+        "name": "gaussian_coverage",
+        "line": 38,
+        "end": 45,
+        "doc": ""
+      },
+      {
+        "name": "apply_dropout",
+        "line": 9,
+        "end": 11,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/uq/swag.py",
+    "lines": 186,
+    "sha256": "5ddd39fa69aecdcb9429afdb26f119b605ca28e0a2cb6df6035a31098978952f",
+    "symbols": [
+      {
+        "name": "SWAG",
+        "line": 8,
+        "end": 152,
+        "doc": "Stochastic Weight Averaging Gaussian (SWAG) for Bayesian Deep Learning."
+      },
+      {
+        "name": "SWAGTrainer",
+        "line": 154,
+        "end": 186,
+        "doc": "Trainer for SWAG models."
+      },
+      {
+        "name": "__init__",
+        "line": 16,
+        "end": 37,
+        "doc": ""
+      },
+      {
+        "name": "update",
+        "line": 39,
+        "end": 60,
+        "doc": "Update SWAG statistics with current model parameters."
+      },
+      {
+        "name": "sample",
+        "line": 62,
+        "end": 104,
+        "doc": "Sample a model from the SWAG posterior."
+      },
+      {
+        "name": "get_mean_model",
+        "line": 106,
+        "end": 114,
+        "doc": "Get model with mean parameters."
+      },
+      {
+        "name": "predict_with_uncertainty",
+        "line": 116,
+        "end": 147,
+        "doc": "Make predictions with uncertainty estimates."
+      },
+      {
+        "name": "forward",
+        "line": 149,
+        "end": 152,
+        "doc": "Forward pass using mean model."
+      },
+      {
+        "name": "__init__",
+        "line": 157,
+        "end": 159,
+        "doc": ""
+      },
+      {
+        "name": "start_collection",
+        "line": 161,
+        "end": 163,
+        "doc": "Start collecting models for SWAG."
+      },
+      {
+        "name": "update_swag",
+        "line": 165,
+        "end": 168,
+        "doc": "Update SWAG with current model state."
+      },
+      {
+        "name": "get_swag_model",
+        "line": 170,
+        "end": 172,
+        "doc": "Get the SWAG model."
+      },
+      {
+        "name": "save_swag",
+        "line": 174,
+        "end": 180,
+        "doc": "Save SWAG model."
+      },
+      {
+        "name": "load_swag",
+        "line": 182,
+        "end": 186,
+        "doc": "Load SWAG model."
+      }
+    ]
+  },
+  {
+    "path": "src/uq/yplus_conformal.py",
+    "lines": 292,
+    "sha256": "ae62f6f674f342df5493e2655c642182a898256afbd98b6f13dd870e6b139535",
+    "symbols": [
+      {
+        "name": "YPlusConformPredictor",
+        "line": 10,
+        "end": 292,
+        "doc": "Y+-conditional conformal prediction with band-wise coverage control."
+      },
+      {
+        "name": "__init__",
+        "line": 13,
+        "end": 27,
+        "doc": "Initialize Y+-conditional conformal predictor."
+      },
+      {
+        "name": "compute_yplus_coordinates",
+        "line": 29,
+        "end": 56,
+        "doc": "Compute Y+ coordinates for channel flow grid."
+      },
+      {
+        "name": "assign_yplus_bands",
+        "line": 58,
+        "end": 74,
+        "doc": "Assign each grid point to a Y+ band."
+      },
+      {
+        "name": "compute_band_residuals",
+        "line": 76,
+        "end": 110,
+        "doc": "Compute residuals grouped by Y+ bands."
+      },
+      {
+        "name": "calibrate",
+        "line": 112,
+        "end": 176,
+        "doc": "Calibrate conformal quantiles for each Y+ band."
+      },
+      {
+        "name": "predict_intervals",
+        "line": 178,
+        "end": 211,
+        "doc": "Generate prediction intervals using calibrated quantiles."
+      },
+      {
+        "name": "evaluate_coverage",
+        "line": 213,
+        "end": 269,
+        "doc": "Evaluate coverage metrics by Y+ band."
+      },
+      {
+        "name": "save_calibration",
+        "line": 271,
+        "end": 283,
+        "doc": "Save calibration information to file."
+      },
+      {
+        "name": "load_calibration",
+        "line": 285,
+        "end": 292,
+        "doc": "Load calibration information from file."
+      }
+    ]
+  },
+  {
+    "path": "src/utils/config.py",
+    "lines": 6,
+    "sha256": "be23a2a6cbc4c4f72b7161eb707035a1fc1049b9cd660da45a6f9aaec2a55516",
+    "symbols": [
+      {
+        "name": "load_config",
+        "line": 2,
+        "end": 6,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/utils/devices.py",
+    "lines": 8,
+    "sha256": "63d396b3a14d4264c7ff10c0a6f90a5c64c51c1a49f272acdc4cdf87f42c4b32",
+    "symbols": [
+      {
+        "name": "pick_device",
+        "line": 4,
+        "end": 8,
+        "doc": "Return cuda device only if explicitly requested and actually usable."
+      }
+    ]
+  },
+  {
+    "path": "src/utils/logging.py",
+    "lines": 7,
+    "sha256": "ed0a306b9b4ac294ef8b0c8c245a82278fc9e7e7e2a1505e2e6ffe2ef91d6f65",
+    "symbols": [
+      {
+        "name": "get_logger",
+        "line": 2,
+        "end": 7,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/utils/manifest.py",
+    "lines": 6,
+    "sha256": "3967f7386627e51bd14bdeb1587afc6c5ee9e30b1217b8d8a5d00b9e8b0a2aa6",
+    "symbols": [
+      {
+        "name": "append_manifest_row",
+        "line": 2,
+        "end": 6,
+        "doc": ""
+      }
+    ]
+  },
+  {
+    "path": "src/utils/seeding.py",
+    "lines": 11,
+    "sha256": "a632f02ad12eb69f6cc38dc6644abecb0091539c13067b1e8d4f26657830eb43",
+    "symbols": [
+      {
+        "name": "seed_all",
+        "line": 4,
+        "end": 11,
+        "doc": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "assertions": 1698639,
+  "randomCommands": 50000,
+  "seeds": 5,
+  "allocationWorkloadCommands": 40000,
+  "observedAllocations": 0,
+  "nativeWasmParity": {
+    "passed": true,
+    "commands": 1010,
+    "comparison": "Exact JSON equality: trades, state, slots, links, sequences and invariant result",
+    "seed": 12345,
+    "inspection": {
+      "fifoFrames": 6,
+      "intermediateInvariantDeferred": true,
+      "traceLimitAndFinalFrameVerified": true,
+      "unsupportedCapacityFlagged": true
+    }
+  },
+  "undefinedBehaviourSanitizer": {
+    "passed": true,
+    "assertions": 1698639,
+    "randomCommands": 50000,
+    "seeds": 5,
+    "allocationWorkloadCommands": 40000,
+    "observedAllocations": 0
+  },
+  "sanitizerNote": "The C++ suite also passed undefined-behaviour instrumentation in WebAssembly. Native Windows AddressSanitizer failed interception during initialisation; a native ASan pass is not claimed.",
+  "date": "2026-10-23",
+  "sourceHashes": {
+    "include\\engine.hpp": "c85bd1cda57d3acaec8a5741f0db14ccce166b92d111f54a999736289f198ce5",
+    "src\\engine.cpp": "8360f87a1988e289cc0e0d3eef0511dd9559b2bbfd61eef06af58d8c7657be4a",
+    "src\\api.cpp": "4ea3446e67fa2cd26dd08dd30f30f678ff6786088933ba6938f1451c61ad77ec",
+    "src\\replay.cpp": "a35f493dc2cfbae95d84bc1eba6dcf290219c9410342eade36b49708fbc81389",
+    "tests\\tests.cpp": "2b1f253509e966011be4b20e1db511826b021fb8d056117cb9d5627d59f6b348",
+    "benchmarks\\bench.cpp": "f9580731d1eb74591a457ccfc45ecdc312c33bb42753df630f1bbd853d1b4440",
+    "benchmarks\\depth.cpp": "ba4ffe19dec3d1469a93b5c914411f36d1fa7b64fb354697817f7b13f10590b5",
+    "engine.js": "ec9187aa08992f5dc5478d79841b5aac805cc07147fea9f96cd7f3674855fbd6",
+    "engine.wasm": "710eda2ea5bae3d062fe50f418db7a71b1f51666cfb5c48ba883c9564054ec7e"
+  }
+}

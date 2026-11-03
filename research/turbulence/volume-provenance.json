@@ -1,0 +1,27 @@
+{
+  "source_arrays": {
+    "target": {
+      "path": "MscThesis\\Dissertation\\FinalHandIn\\FromCSF3\\C3D3_channel_ensemble_128\\C3D3_channel_ensemble_128\\ensemble_results\\test\\targets.npy",
+      "sha256": "19e1d018dc965c19aa75be7bec301472f9606730ec0789cf512292d04cc9cfee"
+    },
+    "mean": {
+      "path": "MscThesis\\Dissertation\\FinalHandIn\\FromCSF3\\C3D3_channel_ensemble_128\\C3D3_channel_ensemble_128\\ensemble_results\\test\\ensemble_mean.npy",
+      "sha256": "3ed2be57ae5fe3a82aa4355ccb41ae523ea23c00f390759b7d377b524056f3f0"
+    },
+    "std": {
+      "path": "MscThesis\\Dissertation\\FinalHandIn\\FromCSF3\\C3D3_channel_ensemble_128\\C3D3_channel_ensemble_128\\ensemble_results\\test\\ensemble_std.npy",
+      "sha256": "59fa6d0f0c1724ab966162e6644349d368ffe7c6a0c7affc18d4cc5d7e02490d"
+    }
+  },
+  "samples": [
+    0,
+    14,
+    29
+  ],
+  "visual_sampling": "Every second node on each array axis: indices 0,2,...,62, 32^3 nodes. No interpolation before export. Isosurfaces use piecewise linear marching tetrahedra.",
+  "encoding": "Per-field affine unsigned 16-bit quantisation. Maximum absolute quantisation error <= scale/2. Little endian base64, decoded in browser.",
+  "diagnostics": "Computed here from stored component-standardised arrays, not historical evaluation results. numpy.gradient on 64^3 with spacing 1 array index and first-order boundaries; omega=curl(v); Q=0.5*(Omega:Omega-S:S), S=(G+G^T)/2, Omega=(G-G^T)/2. No dimensional physical interpretation or y+ location is asserted. Derivatives are sampled after calculation.",
+  "q_source_difference": "src/physics/q_criterion.py multiplies the full symmetric contraction by an extra factor 2. The viewer explicitly uses conventional Frobenius contractions; it does not silently reproduce that source variant.",
+  "spectra": "Full 64^3 fields, per-component spatial mean removed. Shell sum of 0.5 sum_c |FFT(v_c)|^2 / 64^6 in nearest-integer radial mode bins. Sum over all bins equals 0.5 mean sum_c fluctuation^2 (Parseval). Plot bins 1..32; energies beyond32 are retained in exports. No inertial-range fit. Patch-periodic/index-space diagnostic, not physical channel spectrum.",
+  "runtime": "Read-only, lightweight saved-array postprocessing. No checkpoints loaded; no neural inference, training or remote jobs."
+}

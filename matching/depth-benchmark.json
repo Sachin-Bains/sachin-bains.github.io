@@ -1,0 +1,138 @@
+{
+  "samplesPerFixture": 5000,
+  "warmups": 500,
+  "unit": "ns",
+  "inspection": "disabled",
+  "sweeps": [
+    {
+      "makers": 1,
+      "p50": 100,
+      "p95": 200,
+      "p99": 200
+    },
+    {
+      "makers": 4,
+      "p50": 300,
+      "p95": 300,
+      "p99": 300
+    },
+    {
+      "makers": 16,
+      "p50": 1000,
+      "p95": 1100,
+      "p99": 1100
+    },
+    {
+      "makers": 64,
+      "p50": 3900,
+      "p95": 4000,
+      "p99": 4000
+    }
+  ],
+  "cancellations": [
+    {
+      "orders": 16,
+      "levels": 1,
+      "p50": 0,
+      "p95": 100,
+      "p99": 100
+    },
+    {
+      "orders": 16,
+      "levels": 8,
+      "p50": 0,
+      "p95": 100,
+      "p99": 100
+    },
+    {
+      "orders": 16,
+      "levels": 16,
+      "p50": 0,
+      "p95": 100,
+      "p99": 100
+    },
+    {
+      "orders": 128,
+      "levels": 1,
+      "p50": 0,
+      "p95": 100,
+      "p99": 100
+    },
+    {
+      "orders": 128,
+      "levels": 8,
+      "p50": 0,
+      "p95": 100,
+      "p99": 100
+    },
+    {
+      "orders": 128,
+      "levels": 16,
+      "p50": 0,
+      "p95": 100,
+      "p99": 100
+    },
+    {
+      "orders": 512,
+      "levels": 1,
+      "p50": 0,
+      "p95": 100,
+      "p99": 100
+    },
+    {
+      "orders": 512,
+      "levels": 8,
+      "p50": 0,
+      "p95": 100,
+      "p99": 100
+    },
+    {
+      "orders": 512,
+      "levels": 16,
+      "p50": 0,
+      "p95": 100,
+      "p99": 100
+    },
+    {
+      "orders": 1024,
+      "levels": 1,
+      "p50": 0,
+      "p95": 100,
+      "p99": 100
+    },
+    {
+      "orders": 1024,
+      "levels": 8,
+      "p50": 0,
+      "p95": 100,
+      "p99": 100
+    },
+    {
+      "orders": 1024,
+      "levels": 16,
+      "p50": 0,
+      "p95": 100,
+      "p99": 100
+    }
+  ],
+  "layout": {
+    "engineBytes": 1374864,
+    "orderBytes": 48,
+    "levelBytes": 24,
+    "eventBytes": 40,
+    "maxOrders": 4096,
+    "tickCount": 20001,
+    "indexBuckets": 8192,
+    "bitmapWordsPerSide": 313
+  },
+  "environment": {
+    "cpu": "12th Gen Intel Core i7-12700H, 14 cores / 20 logical processors",
+    "os": "Windows / x64",
+    "compiler": "MSVC 19.39.33521.0",
+    "flags": "/std:c++20 /O2 /EHsc /W4",
+    "date": "2026-10-23",
+    "pinning": "none",
+    "setup": "outside timing window",
+    "sampleStorage": "all 20,000 sorted timings per workload"
+  }
+}

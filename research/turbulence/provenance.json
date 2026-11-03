@@ -1,0 +1,60 @@
+{
+  "root": "MscThesis/Dissertation",
+  "export": "central depth plane, test sample indices 0,14,29; all three components; rounded to 6 decimals; no resampling",
+  "source_files": [
+    {
+      "path": "FinalHandIn/FromCSF3/C3D3_channel_ensemble_128/C3D3_channel_ensemble_128/ensemble_results/test/ensemble_mean.npy",
+      "bytes": 94371968,
+      "sha256": "3ed2be57ae5fe3a82aa4355ccb41ae523ea23c00f390759b7d377b524056f3f0"
+    },
+    {
+      "path": "FinalHandIn/FromCSF3/C3D3_channel_ensemble_128/C3D3_channel_ensemble_128/ensemble_results/test/ensemble_std.npy",
+      "bytes": 94371968,
+      "sha256": "59fa6d0f0c1724ab966162e6644349d368ffe7c6a0c7affc18d4cc5d7e02490d"
+    },
+    {
+      "path": "FinalHandIn/FromCSF3/C3D3_channel_ensemble_128/C3D3_channel_ensemble_128/ensemble_results/test/targets.npy",
+      "bytes": 94371968,
+      "sha256": "19e1d018dc965c19aa75be7bec301472f9606730ec0789cf512292d04cc9cfee"
+    },
+    {
+      "path": "FinalHandIn/FromCSF3/C3D3_channel_ensemble_128/C3D3_channel_ensemble_128/ensemble_results/test/inputs.npy",
+      "bytes": 94371968,
+      "sha256": "19e1d018dc965c19aa75be7bec301472f9606730ec0789cf512292d04cc9cfee"
+    },
+    {
+      "path": "FinalHandIn/FromCSF3/C3D3_channel_ensemble_128/C3D3_channel_ensemble_128/ensemble_results/test_ensemble_metrics.json",
+      "bytes": 429,
+      "sha256": "5d70efcb42189ffd081b9119b3d413a42d101abbbd701f9817501fad99d1e345"
+    },
+    {
+      "path": "FinalHandIn/FromCSF3/C3D3_channel_ensemble_128/C3D3_channel_ensemble_128/ensemble_results/val_ensemble_metrics.json",
+      "bytes": 429,
+      "sha256": "5a87e62f837715783b6f2324efc32e7396d7912a467002ad7099c2679023e429"
+    }
+  ],
+  "recomputed": {
+    "test": {
+      "rmse": 0.13815825542311397,
+      "mae": 0.09390986355343037,
+      "coverage": [
+        0.5394115871853299,
+        0.808450910780165,
+        0.9062335544162327
+      ],
+      "n_values": 23592960,
+      "n_cubes": 30
+    },
+    "val": {
+      "rmse": 0.26336408524023047,
+      "mae": 0.1573789993834858,
+      "coverage": [
+        0.4488958994547526,
+        0.725750986735026,
+        0.8287410736083984
+      ],
+      "n_values": 23592960,
+      "n_cubes": 30
+    }
+  }
+}

@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img">
+
+<defs>
+  <marker id="arrowDark2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+  </marker>
+</defs>
+<text x="40" y="50" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="600" text-anchor="start" fill="#111827">Effective eddy-viscosity recovery and reliability linkage</text>
+<rect x="40" y="80" width="500" height="240" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="40" y="68" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" fill="#111827">(a) Germano-style dynamic procedure</text>
+<rect x="60" y="120" width="120" height="60" rx="10" ry="10" fill="#F9FAFB" stroke="#111827" stroke-width="1.5"/>
+<text x="70" y="150" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start" fill="#111827">Filter Δ</text>
+<rect x="220" y="120" width="120" height="60" rx="10" ry="10" fill="#F9FAFB" stroke="#111827" stroke-width="1.5"/>
+<text x="230" y="150" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start" fill="#111827">Filter 2Δ</text>
+<line x1="180" y1="150" x2="220" y2="150" stroke="#111827" stroke-width="1.5" marker-end="url(#arrowDark2)"/>
+<rect x="60" y="210" width="140" height="50" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="70" y="240" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#111827">Resolved stress Lᵢⱼ</text>
+<rect x="240" y="210" width="140" height="50" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="250" y="240" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#111827">Test tensor Mᵢⱼ</text>
+<line x1="200" y1="235" x2="240" y2="235" stroke="#111827" stroke-width="1.5" marker-end="url(#arrowDark2)"/>
+<rect x="400" y="200" width="120" height="70" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="410" y="225" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start" fill="#111827">Local LS</text>
+<text x="410" y="245" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">Cₛ² = ⟨LM⟩/(2⟨MM⟩)</text>
+<line x1="380" y1="235" x2="400" y2="235" stroke="#111827" stroke-width="1.5" marker-end="url(#arrowDark2)"/>
+<rect x="580" y="80" width="580" height="240" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="580" y="68" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" fill="#111827">(b) Cₛ^{eff}(y⁺) profiles (Reτ=1000 vs 5200)</text>
+<line x1="630" y1="270" x2="1110" y2="270" stroke="#111827" stroke-width="1.5"/>
+<line x1="630" y1="270" x2="630" y2="130" stroke="#111827" stroke-width="1.5"/>
+<text x="620" y="120" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end" fill="#111827">Cₛ^{eff}</text>
+<text x="1110" y="295" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end" fill="#111827">y⁺</text>
+<path d="M 630 250 L 710 210 L 830 180 L 950 175 L 1110 170 " fill="none" stroke="#111827" stroke-width="2"/>
+<path d="M 630 252 L 710 212 L 830 185 L 950 182 L 1110 174" fill="none" stroke="#6B7280" stroke-width="2" stroke-dasharray="6,4"/>
+<rect x="640" y="293" width="14" height="14" rx="2" ry="2" fill="#111827" stroke="#111827" stroke-width="0.5"/>
+<text x="660" y="305" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#111827">Reτ=1000</text>
+<rect x="750" y="293" width="14" height="14" rx="2" ry="2" fill="#6B7280" stroke="#111827" stroke-width="0.5"/>
+<text x="770" y="305" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#111827">Reτ=5200</text>
+<rect x="40" y="360" width="1120" height="320" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="40" y="348" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" fill="#111827">(c) Coefficient drift vs error or predictive variance (per-voxel samples)</text>
+<line x1="100" y1="620" x2="1100" y2="620" stroke="#111827" stroke-width="1.5"/>
+<line x1="100" y1="620" x2="100" y2="420" stroke="#111827" stroke-width="1.5"/>
+<text x="90" y="410" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end" fill="#111827">error / variance</text>
+<text x="1100" y="645" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end" fill="#111827">|Cₛ^{eff} − median|</text>
+<circle cx="120" cy="600" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="123" cy="580" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="126" cy="560" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="120" cy="540" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="123" cy="520" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="126" cy="500" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="120" cy="480" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="123" cy="460" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="126" cy="440" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="120" cy="420" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="160" cy="597" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="163" cy="577" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="166" cy="557" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="160" cy="537" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="163" cy="517" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="166" cy="497" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="160" cy="477" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="163" cy="457" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="166" cy="437" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="160" cy="417" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="200" cy="594" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="203" cy="574" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="206" cy="554" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="200" cy="534" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="203" cy="514" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="206" cy="494" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="200" cy="474" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="203" cy="454" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="206" cy="434" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="200" cy="414" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="240" cy="591" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="243" cy="571" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="246" cy="551" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="240" cy="531" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="243" cy="511" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="246" cy="491" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="240" cy="471" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="243" cy="451" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="246" cy="431" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="240" cy="411" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="280" cy="600" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="283" cy="580" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="286" cy="560" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="280" cy="540" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="283" cy="520" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="286" cy="500" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="280" cy="480" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="283" cy="460" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="286" cy="440" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="280" cy="420" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="320" cy="597" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="323" cy="577" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="326" cy="557" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="320" cy="537" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="323" cy="517" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="326" cy="497" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="320" cy="477" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="323" cy="457" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="326" cy="437" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="320" cy="417" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="360" cy="594" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="363" cy="574" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="366" cy="554" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="360" cy="534" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="363" cy="514" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="366" cy="494" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="360" cy="474" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="363" cy="454" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="366" cy="434" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="360" cy="414" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="400" cy="591" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="403" cy="571" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="406" cy="551" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="400" cy="531" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="403" cy="511" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="406" cy="491" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="400" cy="471" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="403" cy="451" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="406" cy="431" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="400" cy="411" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="440" cy="600" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="443" cy="580" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="446" cy="560" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="440" cy="540" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="443" cy="520" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="446" cy="500" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="440" cy="480" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="443" cy="460" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="446" cy="440" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="440" cy="420" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="480" cy="597" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="483" cy="577" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="486" cy="557" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="480" cy="537" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="483" cy="517" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="486" cy="497" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="480" cy="477" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="483" cy="457" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="486" cy="437" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="480" cy="417" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="520" cy="594" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="523" cy="574" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="526" cy="554" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="520" cy="534" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="523" cy="514" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="526" cy="494" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="520" cy="474" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="523" cy="454" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="526" cy="434" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="520" cy="414" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="560" cy="591" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="563" cy="571" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="566" cy="551" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="560" cy="531" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="563" cy="511" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="566" cy="491" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="560" cy="471" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="563" cy="451" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="566" cy="431" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="560" cy="411" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="600" cy="600" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="603" cy="580" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="606" cy="560" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="600" cy="540" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="603" cy="520" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="606" cy="500" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="600" cy="480" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="603" cy="460" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="606" cy="440" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="600" cy="420" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="640" cy="597" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="643" cy="577" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="646" cy="557" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="640" cy="537" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="643" cy="517" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="646" cy="497" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="640" cy="477" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="643" cy="457" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="646" cy="437" r="2.5" fill="#111827" opacity="0.7"/>
+<circle cx="640" cy="417" r="2.5" fill="#111827" opacity="0.7"/>
+<text x="950" y="440" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start" fill="#111827">Pearson r ≥ 0.6</text>
+</svg>

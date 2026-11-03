@@ -1,0 +1,26 @@
+{
+  "export": "Complete original primary validation/training histories; no smoothing, retraining or inference.",
+  "experiments": {
+    "baseline": {
+      "source": "MscThesis/Dissertation/FinalHandIn/FromCSF3/C3D1_channel_primary_final_1000/C3D1_channel_primary_final_1000/loss_history.csv",
+      "sha256": "859c202e3165fc588a88454fe7e304b9bed8e8f164cdc38d30be732ef9f2ccf7",
+      "epochs": 164,
+      "best_validation": {
+        "epoch": 144,
+        "train_loss": 0.0005895738970918631,
+        "val_loss": 0.005498720322632127
+      }
+    },
+    "dropout": {
+      "source": "MscThesis/Dissertation/FinalHandIn/FromCSF3/C3D2_channel_primary_final_1000/C3D2_channel_primary_final_1000/loss_history.csv",
+      "sha256": "d9e77a3157bc50461544054b0188706c8701166dacf8d46cc08f356a4f1e9aa8",
+      "epochs": 44,
+      "best_validation": {
+        "epoch": 34,
+        "train_loss": 0.16449991671279782,
+        "val_loss": 0.0322222520571409
+      }
+    }
+  },
+  "display": "Validation loss, logarithmic y axis. Curves stop at each run\u2019s final recorded epoch. CSV source bytes unchanged."
+}

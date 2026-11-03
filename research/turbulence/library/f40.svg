@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" role="img">
+
+<defs>
+  <marker id="arrowDark" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+  </marker>
+</defs>
+
+<defs>
+  <marker id="arrowMuted" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#6B7280"/>
+  </marker>
+</defs>
+<text x="40" y="50" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="600" text-anchor="start" fill="#111827">Assessment protocol for cross-Reynolds deployment (Y⁺-resolved)</text>
+<rect x="40" y="80" width="340" height="240" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="40" y="68" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" fill="#111827">(a) Y⁺ stratification</text>
+<rect x="60" y="85.0" width="300" height="38.0" rx="6" ry="6" fill="#F3F4F6" stroke="#111827" stroke-width="0.6"/>
+<text x="70" y="109.0" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" fill="#111827">Y⁺ (1–5)</text>
+<rect x="60" y="133.0" width="300" height="38.0" rx="6" ry="6" fill="#E5E7EB" stroke="#111827" stroke-width="0.6"/>
+<text x="70" y="157.0" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" fill="#111827">Y⁺ (5–15)</text>
+<rect x="60" y="181.0" width="300" height="38.0" rx="6" ry="6" fill="#D1D5DB" stroke="#111827" stroke-width="0.6"/>
+<text x="70" y="205.0" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" fill="#111827">Y⁺ (15–50)</text>
+<rect x="60" y="229.0" width="300" height="38.0" rx="6" ry="6" fill="#9CA3AF" stroke="#111827" stroke-width="0.6"/>
+<text x="70" y="253.0" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" fill="#111827">Y⁺ (50–150)</text>
+<rect x="60" y="277.0" width="300" height="38.0" rx="6" ry="6" fill="#6B7280" stroke="#111827" stroke-width="0.6"/>
+<text x="70" y="301.0" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" fill="#111827">Y⁺ (150–500)</text>
+<line x1="350" y1="310" x2="350" y2="90" stroke="#111827" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+<text x="325" y="95" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#111827">wall →</text>
+<text x="325" y="315" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#111827">centreline →</text>
+<text x="60" y="342" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#374151">Normalisation fixed from Reτ=1000 (train)</text>
+<rect x="420" y="80" width="740" height="320" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="420" y="68" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" fill="#111827">(b) Evaluation pipeline and gates</text>
+<rect x="436" y="140.0" width="150" height="60" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="448" y="162.0" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">Data</text>
+<text x="448" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">Reτ=1000 train/val</text>
+<text x="448" y="196.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">Reτ=5200 test</text>
+<line x1="591" y1="170" x2="614" y2="170" stroke="#111827" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+<rect x="614" y="140.0" width="150" height="60" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="626" y="162.0" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">Model</text>
+<text x="626" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">C3D1 / C3D6</text>
+<text x="626" y="196.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">UQ: Ensemble / MC-Dropout</text>
+<line x1="769" y1="170" x2="792" y2="170" stroke="#111827" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+<rect x="792" y="140.0" width="150" height="60" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="804" y="162.0" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">Conformal</text>
+<text x="804" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">by Y⁺ bands</text>
+<text x="804" y="196.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">PICP 0.90±0.02; +MPIW</text>
+<line x1="947" y1="170" x2="970" y2="170" stroke="#111827" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+<rect x="970" y="140.0" width="150" height="60" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="982" y="162.0" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">Physics gates</text>
+<text x="982" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">∇·u  |  Spectra ±10%</text>
+<text x="982" y="196.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">Wall-law U⁺(y⁺)</text>
+<line x1="1125" y1="170" x2="1148" y2="170" stroke="#111827" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+<rect x="1148" y="140.0" width="150" height="60" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="1160" y="162.0" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">Accuracy</text>
+<text x="1160" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">RMSE/MAE/R²</text>
+<text x="1160" y="196.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">(per band, if gates pass)</text>
+<line x1="1303" y1="170" x2="1326" y2="170" stroke="#111827" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+<rect x="1326" y="140.0" width="150" height="60" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="1338" y="162.0" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">Coeff. recovery</text>
+<text x="1338" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">Germano dynamic</text>
+<text x="1338" y="196.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#374151">Cₛ^{eff}(y⁺) profiles</text>
+<rect x="40" y="360" width="1120" height="370" rx="10" ry="10" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+<text x="40" y="348" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" fill="#111827">(c) Band-wise outcome matrix (coverage, calibration, physics, accuracy)</text>
+<text x="60" y="388" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">Band</text>
+<text x="220" y="388" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">PICP@90</text>
+<text x="340" y="388" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">ECE</text>
+<text x="460" y="388" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">∥∇·u∥₂</text>
+<text x="600" y="388" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">Spectra Δ%</text>
+<text x="740" y="388" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">Wall-law Δ</text>
+<text x="880" y="388" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#111827">RMSE</text>
+<text x="60" y="420" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" fill="#111827">Y⁺ (1–5)</text>
+<rect x="220" y="406" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="340" y="406" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="460" y="406" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="600" y="406" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="740" y="406" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="880" y="406" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<text x="60" y="466" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" fill="#111827">Y⁺ (5–15)</text>
+<rect x="220" y="452" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="340" y="452" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="460" y="452" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="600" y="452" width="18" height="18" rx="3" ry="3" fill="#F59E0B" stroke="#111827" stroke-width="0.6"/>
+<rect x="740" y="452" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="880" y="452" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<text x="60" y="512" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" fill="#111827">Y⁺ (15–50)</text>
+<rect x="220" y="498" width="18" height="18" rx="3" ry="3" fill="#F59E0B" stroke="#111827" stroke-width="0.6"/>
+<rect x="340" y="498" width="18" height="18" rx="3" ry="3" fill="#F59E0B" stroke="#111827" stroke-width="0.6"/>
+<rect x="460" y="498" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="600" y="498" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="740" y="498" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="880" y="498" width="18" height="18" rx="3" ry="3" fill="#F59E0B" stroke="#111827" stroke-width="0.6"/>
+<text x="60" y="558" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" fill="#111827">Y⁺ (50–150)</text>
+<rect x="220" y="544" width="18" height="18" rx="3" ry="3" fill="#EF4444" stroke="#111827" stroke-width="0.6"/>
+<rect x="340" y="544" width="18" height="18" rx="3" ry="3" fill="#F59E0B" stroke="#111827" stroke-width="0.6"/>
+<rect x="460" y="544" width="18" height="18" rx="3" ry="3" fill="#EF4444" stroke="#111827" stroke-width="0.6"/>
+<rect x="600" y="544" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="740" y="544" width="18" height="18" rx="3" ry="3" fill="#EF4444" stroke="#111827" stroke-width="0.6"/>
+<text x="880" y="558" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#6B7280">—</text>
+<text x="60" y="604" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" fill="#111827">Y⁺ (150–500)</text>
+<rect x="220" y="590" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="340" y="590" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="460" y="590" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="600" y="590" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="740" y="590" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="880" y="590" width="18" height="18" rx="3" ry="3" fill="#10B981" stroke="#111827" stroke-width="0.6"/>
+<rect x="60" y="698" width="14" height="14" rx="2" ry="2" fill="#10B981" stroke="#111827" stroke-width="0.5"/>
+<text x="80" y="710" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#111827">meets threshold</text>
+<rect x="240" y="698" width="14" height="14" rx="2" ry="2" fill="#F59E0B" stroke="#111827" stroke-width="0.5"/>
+<text x="260" y="710" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#111827">borderline</text>
+<rect x="400" y="698" width="14" height="14" rx="2" ry="2" fill="#EF4444" stroke="#111827" stroke-width="0.5"/>
+<text x="420" y="710" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#111827">fails threshold</text>
+<rect x="580" y="698" width="14" height="14" rx="2" ry="2" fill="#9CA3AF" stroke="#111827" stroke-width="0.5"/>
+<text x="600" y="710" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#111827">not reported (physics failed)</text>
+</svg>

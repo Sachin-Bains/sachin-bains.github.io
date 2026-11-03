@@ -1,0 +1,499 @@
+{
+  "exportDate": "2026-11-02",
+  "researchSourceReadOnly": true,
+  "transformations": [
+    {
+      "output": "figures/mccabe-mach.png",
+      "source": "2557662B_ENG4110P_Final.pdf",
+      "pdfPage": 42,
+      "embeddedImage": "Im32.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "McCabe nozzle Mach contours, Figure 24, printed p32"
+    },
+    {
+      "output": "figures/mccabe-schlieren.png",
+      "source": "2557662B_ENG4110P_Final.pdf",
+      "pdfPage": 44,
+      "embeddedImage": "Im34.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "McCabe pseudo-Schlieren, Figure 26, printed p34"
+    },
+    {
+      "output": "figures/mccabe-shadowgraph.png",
+      "source": "2557662B_ENG4110P_Final.pdf",
+      "pdfPage": 44,
+      "embeddedImage": "Im35.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "McCabe shadowgraph, Figure 27, printed p34"
+    },
+    {
+      "output": "figures/mdtn-mach.png",
+      "source": "2557662B_ENG4110P_Final.pdf",
+      "pdfPage": 45,
+      "embeddedImage": "Im36.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Hot MDTN case Mach contour, Figure 28, printed p35"
+    },
+    {
+      "output": "figures/mccabe-mesh-domain.png",
+      "source": "2557662B_ENG4110P_Final.pdf",
+      "pdfPage": 32,
+      "embeddedImage": "Im24.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "McCabe domain mesh, Figure 17, printed p22"
+    },
+    {
+      "output": "figures/mccabe-mesh-nozzle.png",
+      "source": "2557662B_ENG4110P_Final.pdf",
+      "pdfPage": 32,
+      "embeddedImage": "Im25.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "McCabe nozzle mesh, Figure 18, printed p22"
+    },
+    {
+      "output": "figures/mdtn-mesh-nozzle.png",
+      "source": "2557662B_ENG4110P_Final.pdf",
+      "pdfPage": 38,
+      "embeddedImage": "Im28.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "MDTN nozzle mesh, Figure 21, printed p28"
+    },
+    {
+      "output": "figures/mdtn-mesh-domain.jpg",
+      "source": "2557662B_ENG4110P_Final.pdf",
+      "pdfPage": 38,
+      "embeddedImage": "Im29.jpg",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "MDTN domain mesh, Figure 22, printed p28"
+    },
+    {
+      "output": "figures/mdtn-microjets-20.png",
+      "source": "2557662B_ENG4110P_Final.pdf",
+      "pdfPage": 41,
+      "embeddedImage": "Im30.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "MDTN proposed 20 degree microjet placement, Figure 23a, printed p31"
+    },
+    {
+      "output": "figures/mdtn-microjets-45.png",
+      "source": "2557662B_ENG4110P_Final.pdf",
+      "pdfPage": 41,
+      "embeddedImage": "Im31.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "MDTN proposed 45 degree microjet placement, Figure 23b, printed p31"
+    },
+    {
+      "output": "figures/msl-mach.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 53,
+      "embeddedImage": "Im44.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "MSL-derived axisymmetric case, Figure 29, printed p43"
+    },
+    {
+      "output": "figures/msl-schlieren.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 55,
+      "embeddedImage": "Im46.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "MSL-derived compound Schlieren/Mach image, Figure 31, printed p45"
+    },
+    {
+      "output": "figures/msl-mesh-10.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 51,
+      "embeddedImage": "Im39.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Mach disc at mesh base 10 mm, Figure 27, printed pp41-42"
+    },
+    {
+      "output": "figures/msl-mesh-20.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 51,
+      "embeddedImage": "Im40.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Mach disc at mesh base 20 mm, Figure 27, printed pp41-42"
+    },
+    {
+      "output": "figures/msl-mesh-30.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 52,
+      "embeddedImage": "Im41.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Mach disc at mesh base 30 mm, Figure 27, printed pp41-42"
+    },
+    {
+      "output": "figures/msl-mesh-scale.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 52,
+      "embeddedImage": "Im42.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 27 shared Mach scale"
+    },
+    {
+      "output": "figures/injector-mesh-7.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 56,
+      "embeddedImage": "Im47.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Injector-off pressure footprint at 7 mm, Figure 32, printed p46"
+    },
+    {
+      "output": "figures/injector-mesh-9.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 56,
+      "embeddedImage": "Im48.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Injector-off pressure footprint at 9 mm, Figure 32, printed p46"
+    },
+    {
+      "output": "figures/injector-mesh-11.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 56,
+      "embeddedImage": "Im49.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Injector-off pressure footprint at 11 mm, Figure 32, printed p46"
+    },
+    {
+      "output": "figures/injector-mesh-scale.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 56,
+      "embeddedImage": "Im50.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 32 absolute and normalised pressure scale"
+    },
+    {
+      "output": "figures/off-streamlines.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 57,
+      "embeddedImage": "Im51.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 33: off injector state, streamline visualisation, printed p47"
+    },
+    {
+      "output": "figures/off-mach.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 58,
+      "embeddedImage": "Im55.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 34: off injector state, Mach section, printed p48"
+    },
+    {
+      "output": "figures/off-pressure.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 59,
+      "embeddedImage": "Im58.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 35: off injector state, pressure footprint, printed p49"
+    },
+    {
+      "output": "figures/normal-streamlines.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 57,
+      "embeddedImage": "Im52.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 33: normal injector state, streamline visualisation, printed p47"
+    },
+    {
+      "output": "figures/normal-mach.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 58,
+      "embeddedImage": "Im56.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 34: normal injector state, Mach section, printed p48"
+    },
+    {
+      "output": "figures/normal-pressure.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 59,
+      "embeddedImage": "Im59.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 35: normal injector state, pressure footprint, printed p49"
+    },
+    {
+      "output": "figures/canted-streamlines.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 57,
+      "embeddedImage": "Im53.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 33: canted injector state, streamline visualisation, printed p47"
+    },
+    {
+      "output": "figures/canted-mach.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 58,
+      "embeddedImage": "Im57.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 34: canted injector state, Mach section, printed p48"
+    },
+    {
+      "output": "figures/canted-pressure.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 59,
+      "embeddedImage": "Im60.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 35: canted injector state, pressure footprint, printed p49"
+    },
+    {
+      "output": "figures/injector-mach-scale.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 59,
+      "embeddedImage": "Im54.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 34 shared Mach scale"
+    },
+    {
+      "output": "figures/injector-pressure-scale.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 59,
+      "embeddedImage": "Im61.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 35 absolute pressure scale"
+    },
+    {
+      "output": "figures/pressure-source.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 61,
+      "embeddedImage": "Im62.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Original Figure 36, printed p51; digitisation source"
+    },
+    {
+      "output": "figures/shear-source.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 61,
+      "embeddedImage": "Im63.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Original Figure 37, printed p51; digitisation source"
+    },
+    {
+      "output": "figures/radial-pressure-field.png",
+      "source": "Second_Version.pdf",
+      "pdfPage": 62,
+      "embeddedImage": "Im64.png",
+      "method": "original embedded image bytes; no redraw or simulated field",
+      "caption": "Figure 38: sampled pressure gradient outside plume core, printed p52"
+    },
+    {
+      "output": "data.json/injectors/off/pressure",
+      "source": "Second_Version.pdf",
+      "pdfPage": 61,
+      "figure": 36,
+      "method": "RGB curve tracing, median ordinate per image column; no smoothing or interpolation; occluded columns remain null",
+      "plotBoundsPixels": [
+        106,
+        633,
+        40,
+        458
+      ],
+      "radiusRangeMetres": [
+        0,
+        0.35
+      ],
+      "valueRange": [
+        0,
+        10000
+      ],
+      "visibleColumns": 435,
+      "totalColumns": 528,
+      "radialPixelResolutionMetres": 0.0006641366223908918,
+      "valuePixelResolution": 23.923444976076556,
+      "status": "approximate figure digitisation, not raw CFD output"
+    },
+    {
+      "output": "data.json/injectors/normal/pressure",
+      "source": "Second_Version.pdf",
+      "pdfPage": 61,
+      "figure": 36,
+      "method": "RGB curve tracing, median ordinate per image column; no smoothing or interpolation; occluded columns remain null",
+      "plotBoundsPixels": [
+        106,
+        633,
+        40,
+        458
+      ],
+      "radiusRangeMetres": [
+        0,
+        0.35
+      ],
+      "valueRange": [
+        0,
+        10000
+      ],
+      "visibleColumns": 400,
+      "totalColumns": 528,
+      "radialPixelResolutionMetres": 0.0006641366223908918,
+      "valuePixelResolution": 23.923444976076556,
+      "status": "approximate figure digitisation, not raw CFD output"
+    },
+    {
+      "output": "data.json/injectors/canted/pressure",
+      "source": "Second_Version.pdf",
+      "pdfPage": 61,
+      "figure": 36,
+      "method": "RGB curve tracing, median ordinate per image column; no smoothing or interpolation; occluded columns remain null",
+      "plotBoundsPixels": [
+        106,
+        633,
+        40,
+        458
+      ],
+      "radiusRangeMetres": [
+        0,
+        0.35
+      ],
+      "valueRange": [
+        0,
+        10000
+      ],
+      "visibleColumns": 528,
+      "totalColumns": 528,
+      "radialPixelResolutionMetres": 0.0006641366223908918,
+      "valuePixelResolution": 23.923444976076556,
+      "status": "approximate figure digitisation, not raw CFD output"
+    },
+    {
+      "output": "data.json/injectors/off/shear",
+      "source": "Second_Version.pdf",
+      "pdfPage": 61,
+      "figure": 37,
+      "method": "RGB curve tracing, median ordinate per image column; no smoothing or interpolation; occluded columns remain null",
+      "plotBoundsPixels": [
+        91,
+        633,
+        39,
+        457
+      ],
+      "radiusRangeMetres": [
+        0,
+        0.35
+      ],
+      "valueRange": [
+        0,
+        250
+      ],
+      "visibleColumns": 383,
+      "totalColumns": 543,
+      "radialPixelResolutionMetres": 0.0006457564575645756,
+      "valuePixelResolution": 0.5980861244019139,
+      "status": "approximate figure digitisation, not raw CFD output"
+    },
+    {
+      "output": "data.json/injectors/normal/shear",
+      "source": "Second_Version.pdf",
+      "pdfPage": 61,
+      "figure": 37,
+      "method": "RGB curve tracing, median ordinate per image column; no smoothing or interpolation; occluded columns remain null",
+      "plotBoundsPixels": [
+        91,
+        633,
+        39,
+        457
+      ],
+      "radiusRangeMetres": [
+        0,
+        0.35
+      ],
+      "valueRange": [
+        0,
+        250
+      ],
+      "visibleColumns": 330,
+      "totalColumns": 543,
+      "radialPixelResolutionMetres": 0.0006457564575645756,
+      "valuePixelResolution": 0.5980861244019139,
+      "status": "approximate figure digitisation, not raw CFD output"
+    },
+    {
+      "output": "data.json/injectors/canted/shear",
+      "source": "Second_Version.pdf",
+      "pdfPage": 61,
+      "figure": 37,
+      "method": "RGB curve tracing, median ordinate per image column; no smoothing or interpolation; occluded columns remain null",
+      "plotBoundsPixels": [
+        91,
+        633,
+        39,
+        457
+      ],
+      "radiusRangeMetres": [
+        0,
+        0.35
+      ],
+      "valueRange": [
+        0,
+        250
+      ],
+      "visibleColumns": 543,
+      "totalColumns": 543,
+      "radialPixelResolutionMetres": 0.0006457564575645756,
+      "valuePixelResolution": 0.5980861244019139,
+      "status": "approximate figure digitisation, not raw CFD output"
+    }
+  ],
+  "files": [
+    {
+      "source": "nozzle_profile.csv",
+      "sha256": "ad9dbfbbfea18155f9134bd24f1be754fb494e1aa3440aff7c6852769e47eeb0",
+      "bytes": 17347,
+      "kind": "original numerical CSV"
+    },
+    {
+      "source": "McCabeNozzleGasVelocityNozzleAxis.csv",
+      "sha256": "66c7f63e067a6a29f9327cd05d537a667c02ecd6d9a913fc987f41b4caad1af9",
+      "bytes": 875,
+      "kind": "original numerical CSV"
+    },
+    {
+      "source": "GasVelocityNozzleExitPlane.csv",
+      "sha256": "2bae9b60e64d17fc9423b7309823efb225494d4452ed3163bde9e236a9e0b016",
+      "bytes": 715,
+      "kind": "original numerical CSV"
+    },
+    {
+      "source": "Second_Version.pdf",
+      "sha256": "162a0e1c8926e92019ee747bd3825800fc7c08daeb0ab3080f7ef9d18e8dc18f",
+      "bytes": 8294712,
+      "kind": "original report"
+    },
+    {
+      "source": "2557662B_ENG4110P_Final.pdf",
+      "sha256": "a03d13db3b2d02a42a7f1aa54ac981877c81db307735f334ff2b5aba1b914c28",
+      "bytes": 8950081,
+      "kind": "original report"
+    },
+    {
+      "source": "MccabeNozzle.m",
+      "sha256": "33464e894e998877faffd6a23e8cda00712ace0ff3391d5d3d6317b2609d436b",
+      "bytes": 9187,
+      "kind": "original MATLAB source"
+    },
+    {
+      "source": "FinalFinalDocs/Nozzle2/SketchFiles/Nozzle2FullScale.m",
+      "sha256": "6fa5151dad3113604a028ed0cf18b13ab63b1420dec431d72d9925dec0f9d10d",
+      "bytes": 2433,
+      "kind": "original MATLAB source"
+    },
+    {
+      "source": "FinalFinalDocs/Nozzle2/SketchFiles/Nozzle2QuarterScale.m",
+      "sha256": "5a2b084e71d0ac2dc6bb98d57903bdd80ed738b11af9f6f8c709120336499a60",
+      "bytes": 2819,
+      "kind": "original MATLAB source"
+    }
+  ],
+  "interpretation": {
+    "reportedReductions": {
+      "pressurePercent": 21,
+      "shearPercent": 27,
+      "source": "Second_Version.pdf",
+      "pdfPage": 62,
+      "status": "manuscript reported; plotted curves require baseline reconciliation"
+    },
+    "limits": [
+      "No CFD solve or original MATLAB execution",
+      "Digitised curves do not establish global surface maxima or exact percent reductions",
+      "Original raster flow fields remain raster; 3D geometry is independently constructed from the numerical nozzle coordinates",
+      "Hot MDTN microjet placements do not have completed mitigation results in the final-named report"
+    ]
+  }
+}

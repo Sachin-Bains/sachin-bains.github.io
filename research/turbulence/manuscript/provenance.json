@@ -1,0 +1,38 @@
+[
+  {
+    "model": "C3D1",
+    "archive_path": "Figures/SmokeTest/C3D1/centralslice_C3D1Smoke.png",
+    "sha256": "91926c8149e0e838a59818220a22d778b7b7c5f250ade291af27250765954426",
+    "note": "Original supplied manuscript figure; no recolouring or numerical reconstruction."
+  },
+  {
+    "model": "C3D2",
+    "archive_path": "Figures/SmokeTest/C3D2/centralslice_C3D2Smoke.png",
+    "sha256": "7338e54d0dad0351d33f3b57c58c59d8f9abda2f456b42fce71b46f38ce128d3",
+    "note": "Original supplied manuscript figure; no recolouring or numerical reconstruction."
+  },
+  {
+    "model": "C3D3",
+    "archive_path": "Figures/SmokeTest/C3D3/centralslice_C3D3Smoke_channel0.png",
+    "sha256": "f9b927d5b725dd58c863ba3ffd4ef26f8fdf32cea75edbcbf2c7392db4fa97e8",
+    "note": "Original supplied manuscript figure; no recolouring or numerical reconstruction."
+  },
+  {
+    "model": "C3D4",
+    "archive_path": "Figures/SmokeTest/C3D4/centralslice_C3D4Smoke.png",
+    "sha256": "caef7e9aed16b707607c7b8e4f810dd2526e09751cef9619c1720a8744e56162",
+    "note": "Original supplied manuscript figure; no recolouring or numerical reconstruction."
+  },
+  {
+    "model": "C3D5",
+    "archive_path": "Figures/SmokeTest/C3D5/centralslice_C3D5Smoke.png",
+    "sha256": "b385343ae2004cc6be7c1edd0978cd482d4cab381b893a1c0c62e6d6c7fb7af8",
+    "note": "Original supplied manuscript figure; no recolouring or numerical reconstruction."
+  },
+  {
+    "model": "C3D6",
+    "archive_path": "Figures/SmokeTest/C3D6/centralslice_C3D6Smoke.png",
+    "sha256": "08c8331341a0a392e0734ad1fa7a1852c56016ef353ee56fd09e2dba7fd482b2",
+    "note": "Original supplied manuscript figure; no recolouring or numerical reconstruction."
+  }
+]

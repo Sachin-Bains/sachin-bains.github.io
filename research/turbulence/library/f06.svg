@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1200"
+   height="820"
+   viewBox="0 0 1200 820"
+   role="img"
+   version="1.1"
+   id="svg76"
+   sodipodi:docname="fig1_assessment_pipeline_v2.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview76"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="1.2900387"
+     inkscape:cx="578.6648"
+     inkscape:cy="420.14243"
+     inkscape:window-width="2400"
+     inkscape:window-height="1262"
+     inkscape:window-x="4312"
+     inkscape:window-y="788"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg76" />
+  <defs
+     id="defs1">
+    <marker
+       id="arrowDark"
+       viewBox="0 0 10 10"
+       refX="10"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto-start-reverse">
+      <path
+         d="M 0 0 L 10 5 L 0 10 z"
+         fill="#111827"
+         id="path1" />
+    </marker>
+    <marker
+       id="arrowDark-9"
+       viewBox="0 0 10 10"
+       refX="10"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#111827"
+         id="path1-4" />
+    </marker>
+    <marker
+       id="arrowDark-4"
+       viewBox="0 0 10 10"
+       refX="10"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#111827"
+         id="path1-5" />
+    </marker>
+    <marker
+       id="arrowDark-1"
+       viewBox="0 0 10 10"
+       refX="10"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#111827"
+         id="path1-1" />
+    </marker>
+  </defs>
+  <text
+     x="251.62155"
+     y="23.644201"
+     font-family="Helvetica, Arial, sans-serif"
+     font-size="22px"
+     font-weight="600"
+     text-anchor="start"
+     fill="#111827"
+     id="text1">Assessment protocol for cross-Reynolds deployment (Y⁺-resolved)</text>
+  <rect
+     x="33.400108"
+     y="66.600258"
+     width="376.84247"
+     height="340.97214"
+     rx="11.083603"
+     ry="13.114312"
+     fill="#ffffff"
+     stroke="#111827"
+     stroke-width="1.55728"
+     id="rect1" />
+  <text
+     x="36.871773"
+     y="60.739376"
+     font-family="Helvetica, Arial, sans-serif"
+     font-size="15px"
+     font-weight="600"
+     text-anchor="start"
+     fill="#111827"
+     id="text2">(a) Y⁺ stratification</text>
+  <rect
+     x="60"
+     y="85.0"
+     width="300"
+     height="42.0"
+     rx="6"
+     ry="6"
+     fill="#F3F4F6"
+     stroke="#111827"
+     stroke-width="0.6"
+     id="rect2" />
+  <text
+     x="70"
+     y="111.0"
+     font-family="Helvetica, Arial, sans-serif"
+     font-size="14"
+     font-weight="500"
+     text-anchor="start"
+     fill="#111827"
+     id="text3">Y⁺ (1–5)</text>
+  <rect
+     x="60"
+     y="137.0"
+     width="300"
+     height="42.0"
+     rx="6"
+     ry="6"
+     fill="#E5E7EB"
+     stroke="#111827"
+     stroke-width="0.6"
+     id="rect3" />
+  <text
+     x="70"
+     y="163.0"
+     font-family="Helvetica, Arial, sans-serif"
+     font-size="14"
+     font-weight="500"
+     text-anchor="start"
+     fill="#111827"
+     id="text4">Y⁺ (5–15)</text>
+  <rect
+     x="60"
+     y="189.0"
+     width="300"
+     height="42.0"
+     rx="6"
+     ry="6"
+     fill="#D1D5DB"
+     stroke="#111827"
+     stroke-width="0.6"
+     id="rect4" />
+  <text
+     x="70"
+     y="215.0"
+     font-family="Helvetica, Arial, sans-serif"
+     font-size="14"
+     font-weight="500"
+     text-anchor="start"
+     fill="#111827"
+     id="text5">Y⁺ (15–50)</text>
+  <rect
+     x="60"
+     y="241.0"
+     width="300"
+     height="42.0"
+     rx="6"
+     ry="6"
+     fill="#9CA3AF"
+     stroke="#111827"
+     stroke-width="0.6"
+     id="rect5" />
+  <text
+     x="70"
+     y="267.0"
+     font-family="Helvetica, Arial, sans-serif"
+     font-size="14"
+     font-weight="500"
+     text-anchor="start"
+     fill="#111827"
+     id="text6">Y⁺ (50–150)</text>
+  <rect
+     x="60"
+     y="293.0"
+     width="300"
+     height="42.0"
+     rx="6"
+     ry="6"
+     fill="#6B7280"
+     stroke="#111827"
+     stroke-width="0.6"
+     id="rect6" />
+  <text
+     x="70"
+     y="319.0"
+     font-family="Helvetica, Arial, sans-serif"
+     font-size="14"
+     font-weight="500"
+     text-anchor="start"
+     fill="#111827"
+     id="text7">Y⁺ (150–500)</text>
+  <line
+     x1="370.9296"
+     y1="330.77518"
+     x2="370.9296"
+     y2="90.775169"
+     stroke="#111827"
+     stroke-width="1.5"
+     marker-end="url(#arrowDark)"
+     id="line7" />
+  <text
+     x="356.00684"
+     y="80.686882"
+     font-family="Helvetica, Arial, sans-serif"
+     font-size="12px"
+     font-weight="400"
+     text-anchor="end"
+     fill="#111827"
+     id="text8">wall →</text>
+  <text
+     x="355.23166"
+     y="347.01514"
+     font-family="Helvetica, Arial, sans-serif"
+     font-size="12px"
+     font-weight="400"
+     text-anchor="end"
+     fill="#111827"
+     id="text9">centreline →</text>
+  <text
+     x="93.719917"
+     y="372.85236"
+     font-family="Helvetica, Arial, sans-serif"
+     font-size="13px"
+     font-weight="400"
+     text-anchor="start"
+     fill="#374151"
+     id="text10"><tspan
+       sodipodi:role="line"
+       id="tspan85"
+       x="93.719917"
+       y="372.85236">Normalisation fixed from Reτ=1000 (train);</tspan><tspan
+       sodipodi:role="line"
+       id="tspan86"
+       x="93.719917"
+       y="389.10236">thresholds reported per band</tspan></text>
+  <text
+     x="428.52689"
+     y="59.473114"
+     font-family="Helvetica, Arial, sans-serif"
+     font-size="15px"
+     font-weight="600"
+     text-anchor="start"
+     fill="#111827"
+     id="text11">(b) Evaluation pipeline, thresholds, and decision rule</text>
+  <rect
+     x="34.57399"
+     y="445.42636"
+     width="1130.8521"
+     height="336.89896"
+     rx="10.096893"
+     ry="9.9087925"
+     fill="#ffffff"
+     stroke="#111827"
+     stroke-width="1.5036"
+     id="rect33" />
+  <text
+     x="40"
+     y="435.75171"
+     font-family="Helvetica, Arial, sans-serif"
+     font-size="15px"
+     font-weight="600"
+     text-anchor="start"
+     fill="#111827"
+     id="text34">(c) Band-wise outcome summary (numbers are illustrative)</text>
+  <g
+     id="g86"
+     transform="translate(124.80246,36.433015)">
+    <text
+       x="60"
+       y="468"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#111827"
+       id="text35">Band</text>
+    <text
+       x="210"
+       y="468"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#111827"
+       id="text36">PICP@90</text>
+    <text
+       x="340"
+       y="468"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#111827"
+       id="text37">ECE</text>
+    <text
+       x="470"
+       y="468"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#111827"
+       id="text38">∥∇·u∥₂</text>
+    <text
+       x="600"
+       y="468"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#111827"
+       id="text39">Spectra Δ%</text>
+    <text
+       x="730"
+       y="468"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#111827"
+       id="text40">Wall-law Δ</text>
+    <text
+       x="860"
+       y="468"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#111827"
+       id="text41">RMSE</text>
+    <text
+       x="60"
+       y="502"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="500"
+       text-anchor="start"
+       fill="#111827"
+       id="text42">Y⁺ (1–5)</text>
+    <text
+       x="210"
+       y="502"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#111827"
+       id="text43">0.91</text>
+    <text
+       x="340"
+       y="502"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#111827"
+       id="text44">0.03</text>
+    <text
+       x="470"
+       y="502"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#10b981"
+       id="text45">OK</text>
+    <text
+       x="600"
+       y="502"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#10b981"
+       id="text46">6%</text>
+    <text
+       x="730"
+       y="502"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#10b981"
+       id="text47">OK</text>
+    <text
+       x="860"
+       y="502"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#111827"
+       id="text48">0.085</text>
+    <text
+       x="60"
+       y="546"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="500"
+       text-anchor="start"
+       fill="#111827"
+       id="text49">Y⁺ (5–15)</text>
+    <text
+       x="210"
+       y="546"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#111827"
+       id="text50">0.90</text>
+    <text
+       x="340"
+       y="546"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#111827"
+       id="text51">0.04</text>
+    <text
+       x="470"
+       y="546"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#10b981"
+       id="text52">OK</text>
+    <text
+       x="600"
+       y="546"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#f59e0b"
+       id="text53">12%</text>
+    <text
+       x="730"
+       y="546"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#10b981"
+       id="text54">OK</text>
+    <text
+       x="860"
+       y="546"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#111827"
+       id="text55">0.092</text>
+    <text
+       x="60"
+       y="590"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="500"
+       text-anchor="start"
+       fill="#111827"
+       id="text56">Y⁺ (15–50)</text>
+    <text
+       x="210"
+       y="590"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#111827"
+       id="text57">0.88</text>
+    <text
+       x="340"
+       y="590"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#111827"
+       id="text58">0.06</text>
+    <text
+       x="470"
+       y="590"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#10b981"
+       id="text59">OK</text>
+    <text
+       x="600"
+       y="590"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#10b981"
+       id="text60">7%</text>
+    <text
+       x="730"
+       y="590"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#10b981"
+       id="text61">OK</text>
+    <text
+       x="860"
+       y="590"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#111827"
+       id="text62">0.110</text>
+    <text
+       x="60"
+       y="634"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="500"
+       text-anchor="start"
+       fill="#111827"
+       id="text63">Y⁺ (50–150)</text>
+    <text
+       x="210"
+       y="634"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#111827"
+       id="text64">0.85</text>
+    <text
+       x="340"
+       y="634"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#111827"
+       id="text65">0.07</text>
+    <text
+       x="470"
+       y="634"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#ef4444"
+       id="text66">FAIL</text>
+    <text
+       x="600"
+       y="634"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#10b981"
+       id="text67">8%</text>
+    <text
+       x="730"
+       y="634"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#ef4444"
+       id="text68">FAIL</text>
+    <text
+       x="860"
+       y="634"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#6b7280"
+       id="text69">—</text>
+    <text
+       x="60"
+       y="678"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="500"
+       text-anchor="start"
+       fill="#111827"
+       id="text70">Y⁺ (150–500)</text>
+    <text
+       x="210"
+       y="678"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#111827"
+       id="text71">0.92</text>
+    <text
+       x="340"
+       y="678"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#111827"
+       id="text72">0.03</text>
+    <text
+       x="470"
+       y="678"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#10b981"
+       id="text73">OK</text>
+    <text
+       x="600"
+       y="678"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="400"
+       text-anchor="start"
+       fill="#10b981"
+       id="text74">9%</text>
+    <text
+       x="730"
+       y="678"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#10b981"
+       id="text75">OK</text>
+    <text
+       x="860"
+       y="678"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="14px"
+       font-weight="700"
+       text-anchor="start"
+       fill="#111827"
+       id="text76">0.080</text>
+  </g>
+  <g
+     id="g85"
+     transform="translate(34.882674,1.5503411)">
+    <rect
+       x="387.44281"
+       y="65.271767"
+       width="740"
+       height="340"
+       rx="10"
+       ry="10"
+       fill="#ffffff"
+       stroke="#111827"
+       stroke-width="1.5"
+       id="rect10" />
+    <g
+       id="g83"
+       transform="matrix(0.96177546,0,0,0.90386651,-1.1970202,33.457508)">
+      <rect
+         x="436"
+         y="300"
+         width="708"
+         height="88"
+         rx="8"
+         ry="8"
+         fill="#f9fafb"
+         stroke="#6b7280"
+         stroke-width="1"
+         id="rect29" />
+      <text
+         x="450"
+         y="328"
+         font-family="Helvetica, Arial, sans-serif"
+         font-size="13px"
+         font-weight="700"
+         text-anchor="start"
+         fill="#111827"
+         id="text30">Decision rule:</text>
+      <text
+         x="566"
+         y="328"
+         font-family="Helvetica, Arial, sans-serif"
+         font-size="13px"
+         font-weight="400"
+         text-anchor="start"
+         fill="#111827"
+         id="text31">If any physics gate fails in a Y⁺ band → omit RMSE/MAE for that band; report the failure.</text>
+      <text
+         x="450"
+         y="352"
+         font-family="Helvetica, Arial, sans-serif"
+         font-size="13px"
+         font-weight="700"
+         text-anchor="start"
+         fill="#111827"
+         id="text32">Reporting order:</text>
+      <text
+         x="566"
+         y="352"
+         font-family="Helvetica, Arial, sans-serif"
+         font-size="13px"
+         font-weight="400"
+         text-anchor="start"
+         fill="#111827"
+         id="text33">Coverage → Physics → Accuracy → Cₛ^{eff}(y⁺).</text>
+    </g>
+    <g
+       id="g84"
+       transform="translate(-3.1006821,30.23165)">
+      <g
+         id="g76"
+         transform="translate(-17.147796,-66.774846)">
+        <rect
+           x="436"
+           y="157"
+           width="150"
+           height="66"
+           rx="10"
+           ry="10"
+           fill="#ffffff"
+           stroke="#111827"
+           stroke-width="1.5"
+           id="rect11" />
+        <text
+           x="448"
+           y="179"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="14px"
+           font-weight="700"
+           text-anchor="start"
+           fill="#111827"
+           id="text12">Data</text>
+        <text
+           x="448"
+           y="197"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="12px"
+           font-weight="400"
+           text-anchor="start"
+           fill="#374151"
+           id="text13">Reτ=1000 train/val</text>
+        <text
+           x="448"
+           y="213"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="12px"
+           font-weight="400"
+           text-anchor="start"
+           fill="#374151"
+           id="text14">Reτ=5200 test</text>
+      </g>
+      <line
+         x1="569.91083"
+         y1="126.41711"
+         x2="682.70856"
+         y2="126.41711"
+         stroke="#111827"
+         stroke-width="3.47641"
+         marker-end="url(#arrowDark)"
+         id="line14" />
+      <g
+         id="g79"
+         transform="translate(92.63369,-11.510695)">
+        <rect
+           x="591.71924"
+           y="101.09091"
+           width="150"
+           height="66"
+           rx="10"
+           ry="10"
+           fill="#ffffff"
+           stroke="#111827"
+           stroke-width="1.5"
+           id="rect14" />
+        <text
+           x="596.59357"
+           y="123.09091"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="14px"
+           font-weight="700"
+           text-anchor="start"
+           fill="#111827"
+           id="text15">Model</text>
+        <text
+           x="596.04547"
+           y="141.09091"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="12px"
+           font-weight="400"
+           text-anchor="start"
+           fill="#374151"
+           id="text16">C3D1 / C3D6</text>
+        <text
+           x="618.79199"
+           y="151.33353"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="11.5602px"
+           font-weight="400"
+           text-anchor="start"
+           fill="#374151"
+           id="text17"
+           transform="scale(0.96335011,1.0380442)"
+           style="stroke-width:0.96335">UQ: Ensemble / MC-Dropout</text>
+      </g>
+      <g
+         id="g78"
+         transform="translate(160.68472,-70.38747)">
+        <rect
+           x="788"
+           y="157"
+           width="150"
+           height="66"
+           rx="10"
+           ry="10"
+           fill="#ffffff"
+           stroke="#111827"
+           stroke-width="1.5"
+           id="rect17" />
+        <text
+           x="800"
+           y="179"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="14px"
+           font-weight="700"
+           text-anchor="start"
+           fill="#111827"
+           id="text18">Conformal</text>
+        <text
+           x="800"
+           y="197"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="12px"
+           font-weight="400"
+           text-anchor="start"
+           fill="#374151"
+           id="text19">by Y⁺ bands</text>
+        <text
+           x="800"
+           y="213"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="12px"
+           font-weight="400"
+           text-anchor="start"
+           fill="#374151"
+           id="text20">PICP 0.90±0.02; +MPIW</text>
+      </g>
+      <g
+         id="g80"
+         transform="translate(-545.64799,24.471978)">
+        <rect
+           x="964"
+           y="157"
+           width="150"
+           height="66"
+           rx="10"
+           ry="10"
+           fill="#ffffff"
+           stroke="#111827"
+           stroke-width="1.5"
+           id="rect20" />
+        <text
+           x="976"
+           y="179"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="14px"
+           font-weight="700"
+           text-anchor="start"
+           fill="#111827"
+           id="text21">Physics gates</text>
+        <text
+           x="976"
+           y="197"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="12px"
+           font-weight="400"
+           text-anchor="start"
+           fill="#374151"
+           id="text22">∥∇·u∥₂ ≤ 1.2× DNS</text>
+        <text
+           x="976"
+           y="213"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="12px"
+           font-weight="400"
+           text-anchor="start"
+           fill="#374151"
+           id="text23">Spectra ±10%; Wall-law</text>
+      </g>
+      <g
+         id="g81"
+         transform="translate(-457.6482,23.431103)">
+        <rect
+           x="1140"
+           y="157"
+           width="150"
+           height="66"
+           rx="10"
+           ry="10"
+           fill="#ffffff"
+           stroke="#111827"
+           stroke-width="1.5"
+           id="rect23" />
+        <text
+           x="1152"
+           y="179"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="14px"
+           font-weight="700"
+           text-anchor="start"
+           fill="#111827"
+           id="text24">Accuracy</text>
+        <text
+           x="1152"
+           y="197"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="12px"
+           font-weight="400"
+           text-anchor="start"
+           fill="#374151"
+           id="text25">RMSE/MAE/R²</text>
+        <text
+           x="1152"
+           y="213"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="12px"
+           font-weight="400"
+           text-anchor="start"
+           fill="#374151"
+           id="text26">(report only if gates pass)</text>
+      </g>
+      <g
+         id="g82"
+         transform="translate(-170.14682,-17.739604)">
+        <rect
+           x="1117.944"
+           y="197.69644"
+           width="150"
+           height="66"
+           rx="10"
+           ry="10"
+           fill="#ffffff"
+           stroke="#111827"
+           stroke-width="1.5"
+           id="rect26" />
+        <text
+           x="1124.8456"
+           y="216.04764"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="14px"
+           font-weight="700"
+           text-anchor="start"
+           fill="#111827"
+           id="text27">Coeff. recovery</text>
+        <text
+           x="1125.1196"
+           y="235.14389"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="12px"
+           font-weight="400"
+           text-anchor="start"
+           fill="#374151"
+           id="text28">Germano dynamic</text>
+        <text
+           x="1125.1196"
+           y="249.77357"
+           font-family="Helvetica, Arial, sans-serif"
+           font-size="12px"
+           font-weight="400"
+           text-anchor="start"
+           fill="#374151"
+           id="text29">Cₛ^{eff}(y⁺) profiles</text>
+      </g>
+      <line
+         x1="835.02051"
+         y1="122.90564"
+         x2="947.81824"
+         y2="122.90564"
+         stroke="#111827"
+         stroke-width="3.47641"
+         marker-end="url(#arrowDark-9)"
+         id="line14-8"
+         style="marker-end:url(#arrowDark-9)" />
+      <line
+         x1="569.00549"
+         y1="211.68779"
+         x2="681.80322"
+         y2="211.68779"
+         stroke="#111827"
+         stroke-width="3.47641"
+         marker-end="url(#arrowDark-4)"
+         id="line14-1"
+         style="marker-end:url(#arrowDark-4)" />
+      <line
+         x1="833.58838"
+         y1="212.72997"
+         x2="946.38611"
+         y2="212.72997"
+         stroke="#111827"
+         stroke-width="3.47641"
+         marker-end="url(#arrowDark-1)"
+         id="line14-2"
+         style="marker-end:url(#arrowDark-1)" />
+    </g>
+  </g>
+</svg>

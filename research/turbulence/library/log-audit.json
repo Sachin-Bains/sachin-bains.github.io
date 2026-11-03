@@ -1,0 +1,76 @@
+{
+  "source": "MscThesis/Dissertation/FinalHandIn/Logs/PrimaryTest/C3D3LogPrimary.txt",
+  "mixedSegments": [
+    {
+      "member": 4,
+      "dates": [
+        "2025-09-04",
+        "2025-09-08"
+      ],
+      "lines": [
+        312,
+        362
+      ],
+      "matches": "smoke m04 CSV within four-decimal rounding, epochs 36\u201386",
+      "action": "Only primary-dated epochs 1\u201335 exported as a partial primary history; smoke tail already present in smoke CSV."
+    }
+  ],
+  "exported": [
+    {
+      "id": "log-c4",
+      "source": "MscThesis/Dissertation/FinalHandIn/Logs/SmokeTest/C3D4LogSmoke.txt",
+      "sha256": "a3d3a03eebe9064c8050b5fa215e4e14ab2fbea0623ba86499d5b056a91fb534",
+      "recordType": "Log / 4 decimals",
+      "note": "Epoch labels 0\u2013199. Objective includes a weighted KL contribution; compare the reconstruction component before ranking against plain MSE."
+    },
+    {
+      "id": "log-c5",
+      "source": "MscThesis/Dissertation/FinalHandIn/Logs/SmokeTest/C3D5LogSmoke.txt",
+      "sha256": "4eedb0761deca97b1f880377cf59d3e4baaad99df4f3bcbdc9614ffaff7dd1c6",
+      "recordType": "Log / 6 decimals",
+      "note": "Epoch labels 0\u2013199. Log announces collection from epoch 100; 100 update messages record epochs 100\u2013199."
+    },
+    {
+      "id": "log-c6",
+      "source": "MscThesis/Dissertation/FinalHandIn/Logs/SmokeTest/C3D6LogSmoke.txt",
+      "sha256": "b12ec82c115a6ebf1c61c8d9c00d21b750e8b02de0ea043e6771fc55f573b9bb",
+      "recordType": "Log / 6 decimals",
+      "note": "Epoch labels 1\u201386. Data, weighted physical loss and continuity residual are retained separately; the log ends with early stopping."
+    },
+    {
+      "id": "log-primary-m0",
+      "source": "MscThesis/Dissertation/FinalHandIn/Logs/PrimaryTest/C3D3LogPrimary.txt",
+      "sha256": "8afa475a56ca6f1a463d14e995c9b516c1c718fe8aac8215c2419d688a117676",
+      "recordType": "Log / 4 decimals",
+      "note": "Primary log, September 7\u20138; rounded printed losses, not full-precision CSV values."
+    },
+    {
+      "id": "log-primary-m1",
+      "source": "MscThesis/Dissertation/FinalHandIn/Logs/PrimaryTest/C3D3LogPrimary.txt",
+      "sha256": "8afa475a56ca6f1a463d14e995c9b516c1c718fe8aac8215c2419d688a117676",
+      "recordType": "Log / 4 decimals",
+      "note": "Primary log, September 7\u20138; rounded printed losses, not full-precision CSV values."
+    },
+    {
+      "id": "log-primary-m2",
+      "source": "MscThesis/Dissertation/FinalHandIn/Logs/PrimaryTest/C3D3LogPrimary.txt",
+      "sha256": "8afa475a56ca6f1a463d14e995c9b516c1c718fe8aac8215c2419d688a117676",
+      "recordType": "Log / 4 decimals",
+      "note": "Primary log, September 7\u20138; rounded printed losses, not full-precision CSV values."
+    },
+    {
+      "id": "log-primary-m3",
+      "source": "MscThesis/Dissertation/FinalHandIn/Logs/PrimaryTest/C3D3LogPrimary.txt",
+      "sha256": "8afa475a56ca6f1a463d14e995c9b516c1c718fe8aac8215c2419d688a117676",
+      "recordType": "Log / 4 decimals",
+      "note": "Primary log, September 7\u20138; rounded printed losses, not full-precision CSV values."
+    },
+    {
+      "id": "log-primary-m4",
+      "source": "MscThesis/Dissertation/FinalHandIn/Logs/PrimaryTest/C3D3LogPrimary.txt",
+      "sha256": "8afa475a56ca6f1a463d14e995c9b516c1c718fe8aac8215c2419d688a117676",
+      "recordType": "Log / 4 decimals",
+      "note": "Partial record: primary-dated epochs 1\u201335 only. At epoch 36 the source jumps back to September 4 and reproduces the smoke m04 CSV. The mixed tail is excluded."
+    }
+  ]
+}
